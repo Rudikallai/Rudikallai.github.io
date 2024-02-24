@@ -57,6 +57,33 @@ div.aside {
     display: table;
 }
 
+#wheat {
+    color: wheat;
+    padding: 5%;
+    border: 1px solid wheat;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    background-color: rgb(82, 158, 196);
+    overflow: hidden;
+}
+
+li a {
+    display: block;
+    text-decoration: none;
+    color: wheat;
+    text-align: center;
+    padding: 5%;
+    border-radius: 8px;
+}
+
+li a:hover {
+    background-color: rgb(27, 84, 112);
+    border-radius: 8px;
+}
+
 footer {
     margin: 2%;
     text-align: center;
@@ -76,4 +103,9 @@ footer {
 
 #third-section {
     background-color: rgb(232, 251, 254);
+}
+
+h3 {
+    padding-top: 4%;
+    text-align: center;
 }
