@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #background {
+    background-image: url("wallpaper3.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  div.box {
+    margin-top: 30px;
+    margin-left: 30px;
+    border: 2px solid rgb(37, 33, 33);
+    background-color: rgb(102, 106, 133);
+    width: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 15px;
+  }
+  
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+  }
+  
+  li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  li a:hover {
+    background-color: rgb(133, 162, 183);
+    border-radius: 15px;
+  }
+  
+  li::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  a {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
