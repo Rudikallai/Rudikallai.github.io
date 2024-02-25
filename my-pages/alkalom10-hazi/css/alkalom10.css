@@ -11,6 +11,10 @@ html {
     font-style: normal;
   }
 
+  #wheat, #balaton, #tisza-to, #szelidi-to, #back {
+    font-style: italic;
+  }
+
 body {
     width: 80%;
     background-color: #D7B520;
