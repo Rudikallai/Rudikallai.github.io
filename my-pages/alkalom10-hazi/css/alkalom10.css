@@ -15,6 +15,10 @@ html {
     font-style: italic;
   }
 
+  h4 {
+    color: wheat;
+  }
+
 body {
     width: 80%;
     background-color: #D7B520;
