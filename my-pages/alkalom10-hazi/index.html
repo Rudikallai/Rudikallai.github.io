@@ -26,61 +26,64 @@
                     <li><a href="#tisza-to">Tisza-tó</a></li>
                     <li><a href="#szelidi-to">Szelidi-tó</a></li>
                 </ul>
+                <div class="formbar">
+                    <h4>Kérem töltse ki a jelentkezési űrlapot.</h4>
 
-                <h4>Kérem töltse ki a jelentkezési űrlapot.</h4>
+                    <form action="send_message.php" method="post">
+                        <div class="form">
+                            <label for="name">Név:</label>
+                            <input maxlength="20" type="text" id="name" name="name" placeholder="Név..." required>
+                        </div>
 
-                <form action="send_message.php" method="post">
-                    <div class="form">
-                        <label for="name">Név:</label>
-                        <input maxlength="20" type="text" id="name" name="name" placeholder="Név..." required>
-                    </div>
+                        <div class="form">
+                            <label for="email">Email:</label>
+                            <input maxlength="20" type="email" id="email" name="email" placeholder="E-mail cím..."
+                                required>
+                        </div>
 
-                    <div class="form">
-                        <label for="email">Email:</label>
-                        <input maxlength="20" type="email" id="email" name="email" placeholder="E-mail cím..." required>
-                    </div>
+                        <div class="form">
+                            <label for="phone">Telefonszám:</label>
+                            <input maxlength="20" type="phone" id="phone" name="phone" placeholder="Telefonszám..."
+                                required>
+                        </div>
 
-                    <div class="form">
-                        <label for="phone">Telefonszám:</label>
-                        <input maxlength="20" type="phone" id="phone" name="phone" placeholder="Telefonszám..." required>
-                    </div>
+                        <div class="form">
+                            <label for="lakes">Melyik tó érdekli?</label>
+                            <select id="lakes" name="lakes">
+                                <option value="balaton">Balaton</option>
+                                <option value="tisza-to">Tisza-tó</option>
+                                <option value="szelidi-to">Szelidi-tó</option>
+                            </select>
+                        </div>
 
-                    <div class="form">
-                        <label for="lakes">Melyik tó érdekli?</label>
-                        <select id="lakes" name="lakes">
-                            <option value="balaton">Balaton</option>
-                            <option value="tisza-to">Tisza-tó</option>
-                            <option value="szelidi-to">Szelidi-tó</option>
-                        </select>
-                    </div>
+                        <div class="szallas">
+                            <p>Milyen szállást keres?</p>
+                            <select id="szallas" name="szallas" size="3" multiple>
+                                <option value="szalloda">Szálloda</option>
+                                <option value="apartmanhaz">Apartmanház</option>
+                                <option value="kemping">Kemping</option>
+                            </select>
+                        </div>
 
-                    <div class="szallas">
-                        <p>Milyen szállást keres?</p>
-                        <select id="szallas" name="szallas" size="3" multiple>
-                            <option value="szalloda">Szálloda</option>
-                            <option value="apartmanhaz">Apartmanház</option>
-                            <option value="kemping">Kemping</option>
-                        </select>
-                    </div>
+                        <div class="form">
+                            <label for="ellatas">Milyen ellátást szeretne?</label>
+                            <select id="ellatas" name="ellatas">
+                                <option value="teljes">Teljes ellátás</option>
+                                <option value="fel panzio">Fél panzió</option>
+                                <option value="csak reggeli">Csak reggeli</option>
+                                <option value="nem kerek ellatast">Nem kérek ellátást</option>
+                            </select>
+                        </div>
 
-                    <div class="form">
-                        <label for="ellatas">Milyen ellátást szeretne?</label>
-                        <select id="ellatas" name="ellatas">
-                            <option value="teljes">Teljes ellátás</option>
-                            <option value="fel panzio">Fél panzió</option>
-                            <option value="csak reggeli">Csak reggeli</option>
-                            <option value="nem kerek ellatast">Nem kérek ellátást</option>
-                        </select>
-                    </div>
+                        <div class="form">
+                            <label for="message">Üzenet:</label>
+                            <textarea maxlength="100" id="message" name="message" placeholder="Üzenet..."
+                                required></textarea>
+                        </div>
 
-                    <div class="form">
-                        <label for="message">Üzenet:</label>
-                        <textarea maxlength="100" id="message" name="message" placeholder="Üzenet..." required></textarea>
-                    </div>
-
-                    <input type="submit" value="Mehet">
-                </form>
-
+                        <input type="submit" value="Mehet">
+                    </form>
+                </div>
             </aside>
         </div>
 
