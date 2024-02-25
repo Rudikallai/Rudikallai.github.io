@@ -82,8 +82,21 @@ h4 {
     padding-top: 15%;
 }
 
-#ellatas {
-    width: 60%;
+#ellatas, #lakes, #szallas, #name, #email, #phone, #message, #submit {
+    width: 100%;
+    border: 1px solid wheat;
+    border-radius: 5px;
+}
+
+#submit {
+    width: 70%;
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
+
+#submit:hover {
+    background-color: rgb(43, 114, 150);
+    color: wheat;
 }
 
 div.form {
@@ -109,8 +122,6 @@ option {
     width: 100%;
 }
 
-
-
 option {
     width: 100%;
     border-radius: 3px;
@@ -128,6 +139,7 @@ input {
 textarea {
     width: 100%;
     height: 150px;
+    margin-bottom: 1%;
 }
 
 #wheat {
@@ -198,7 +210,7 @@ h3 {
     border-radius: 8px;
     float: left;
     margin-right: 2%;
-    width: 185px;
+    width: 70%;
 }
 
 p {

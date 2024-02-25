@@ -27,7 +27,7 @@
                     <li><a href="#szelidi-to">Szelidi-tó</a></li>
                 </ul>
                 <div class="formbar">
-                    <h4>Kérem töltse ki a jelentkezési űrlapot.</h4>
+                    <h4>Kérem töltse ki a jelentkezési űrlapot:</h4>
 
                     <form action="send_message.php" method="post">
                         <div class="form">
@@ -76,12 +76,12 @@
                         </div>
 
                         <div class="form">
-                            <label for="message">Üzenet:</label>
+                            <label id="uzenet" for="message">Üzenet:</label>
                             <textarea maxlength="100" id="message" name="message" placeholder="Üzenet..."
                                 required></textarea>
                         </div>
 
-                        <input type="submit" value="Mehet">
+                        <input id="submit" type="submit" value="Mehet">
                     </form>
                 </div>
             </aside>
