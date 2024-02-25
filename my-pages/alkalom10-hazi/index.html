@@ -17,9 +17,9 @@
                 <h1 id="wheat">Menü</h1>
 
                 <ul>
-                    <li><a href="#first">Balaton</a></li>
-                    <li><a href="#second">Tisza-tó</a></li>
-                    <li><a href="#third">Szelidi-tó</a></li>
+                    <li><a href="#balaton">Balaton</a></li>
+                    <li><a href="#tisza-to">Tisza-tó</a></li>
+                    <li><a href="#szelidi-to">Szelidi-tó</a></li>
                 </ul>
 
                 <h4>Kérem töltse ki a jelentkezési űrlapot.</h4>
@@ -37,7 +37,7 @@
 
                     <div class="form">
                         <label for="phone">Telefonszám:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Telefonszám..." required>
+                        <input type="phone" id="phone" name="phone" placeholder="Telefonszám..." required>
                     </div>
 
                     <div class="form">
@@ -50,7 +50,7 @@
                     </div>
 
                     <div class="szallas">
-                        <label for="lakes">Milyen szállást keres?</label>
+                        <p>Milyen szállást keres?</p>
                         <select id="szallas" name="szallas" size="3" multiple>
                             <option value="szalloda">Szálloda</option>
                             <option value="apartmanhaz">Apartmanház</option>
@@ -59,11 +59,21 @@
                     </div>
 
                     <div class="form">
+                        <label for="ellatas">Milyen ellátást szeretne?</label>
+                        <select id="ellatas" name="ellatas">
+                            <option value="teljes">Teljes ellátás</option>
+                            <option value="fel panzio">Fél panzió</option>
+                            <option value="csak reggeli">Csak reggeli</option>
+                            <option value="nem kerek ellatast">Nem kérek ellátást</option>
+                        </select>
+                    </div>
+
+                    <div class="form">
                         <label for="message">Üzenet:</label>
                         <textarea id="message" name="message" placeholder="Üzenet..." required></textarea>
                     </div>
 
-                    <input type="submit" value="Send Message">
+                    <input type="submit" value="Mehet">
                 </form>
 
             </aside>
@@ -73,7 +83,7 @@
 
             <section id="first-section">
 
-                <h2>Balaton</h2>
+                <h2 id="balaton">Balaton</h2>
 
                 <p>A Balaton Magyarország legnagyobb tava, lenyűgöző természeti kincs, mely a közép-európai táj
                     egyik
@@ -111,7 +121,7 @@
 
             <section id="second-section">
 
-                <h2 id="second">Tisza-tó</h2>
+                <h2 id="tisza-to">Tisza-tó</h2>
 
                 <p>A Tisza-tó Magyarország egyik legnagyobb mesterséges tavaként az ország északi részén található.
                     A tó
@@ -146,7 +156,7 @@
 
             <section id="third-section">
 
-                <h2 id="third">Szelidi-tó</h2>
+                <h2 id="szelidi-to">Szelidi-tó</h2>
 
                 <p>A Szelidi-tó a Duna-Tisza közén fekvő, festői szépségű vízterület, melyet a Sárvíz folyó
                     szabályozásával alakítottak ki. A tó körül buja erdők és nádasok teremtenek egyedi természeti
