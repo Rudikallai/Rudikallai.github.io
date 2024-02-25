@@ -21,6 +21,51 @@
                     <li><a href="#second">Tisza-tó</a></li>
                     <li><a href="#third">Szelidi-tó</a></li>
                 </ul>
+
+                <h4>Kérem töltse ki a jelentkezési űrlapot.</h4>
+
+                <form action="send_message.php" method="post">
+                    <div class="form">
+                        <label for="name">Név:</label>
+                        <input type="text" id="name" name="name" placeholder="Név..." required>
+                    </div>
+
+                    <div class="form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="E-mail cím..." required>
+                    </div>
+
+                    <div class="form">
+                        <label for="phone">Telefonszám:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Telefonszám..." required>
+                    </div>
+
+                    <div class="form">
+                        <label for="lakes">Melyik tó érdekli?</label>
+                        <select id="lakes" name="lakes">
+                            <option value="balaton">Balaton</option>
+                            <option value="tisza-to">Tisza-tó</option>
+                            <option value="szelidi-to">Szelidi-tó</option>
+                        </select>
+                    </div>
+
+                    <div class="szallas">
+                        <label for="lakes">Milyen szállást keres?</label>
+                        <select id="szallas" name="szallas" size="3" multiple>
+                            <option value="szalloda">Szálloda</option>
+                            <option value="apartmanhaz">Apartmanház</option>
+                            <option value="kemping">Kemping</option>
+                        </select>
+                    </div>
+
+                    <div class="form">
+                        <label for="message">Üzenet:</label>
+                        <textarea id="message" name="message" placeholder="Üzenet..." required></textarea>
+                    </div>
+
+                    <input type="submit" value="Send Message">
+                </form>
+
             </aside>
         </div>
 
