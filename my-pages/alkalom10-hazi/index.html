@@ -32,17 +32,17 @@
                 <form action="send_message.php" method="post">
                     <div class="form">
                         <label for="name">Név:</label>
-                        <input type="text" id="name" name="name" placeholder="Név..." required>
+                        <input maxlength="20" type="text" id="name" name="name" placeholder="Név..." required>
                     </div>
 
                     <div class="form">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" placeholder="E-mail cím..." required>
+                        <input maxlength="20" type="email" id="email" name="email" placeholder="E-mail cím..." required>
                     </div>
 
                     <div class="form">
                         <label for="phone">Telefonszám:</label>
-                        <input type="phone" id="phone" name="phone" placeholder="Telefonszám..." required>
+                        <input maxlength="20" type="phone" id="phone" name="phone" placeholder="Telefonszám..." required>
                     </div>
 
                     <div class="form">
@@ -75,7 +75,7 @@
 
                     <div class="form">
                         <label for="message">Üzenet:</label>
-                        <textarea id="message" name="message" placeholder="Üzenet..." required></textarea>
+                        <textarea maxlength="100" id="message" name="message" placeholder="Üzenet..." required></textarea>
                     </div>
 
                     <input type="submit" value="Mehet">
