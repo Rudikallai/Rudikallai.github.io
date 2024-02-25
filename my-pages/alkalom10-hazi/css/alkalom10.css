@@ -128,3 +128,50 @@ p {
 div.img {
     margin: 2%;
 }
+
+
+
+div#back a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(247, 157, 157);
+    border-radius: 8px;
+    padding: 2%;
+}
+
+div#back a:hover {
+    background-color: rgb(247, 157, 157);
+    padding: 2%;
+    border-radius: 8px;
+    color: rgb(54, 56, 84);
+}
+
+div#back2 a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(238, 219, 72);
+    border-radius: 8px;
+    padding: 2%;
+}
+
+div#back2 a:hover {
+    background-color: rgb(238, 219, 72);
+    padding: 2%;
+    border-radius: 8px;
+    color: rgb(54, 56, 84);
+}
+
+div#back3 a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(80, 211, 231);
+    border-radius: 8px;
+    padding: 2%;
+}
+
+div#back3 a:hover {
+    background-color: rgb(80, 211, 231);
+    padding: 2%;
+    border-radius: 8px;
+    color: rgb(54, 56, 84);
+}
