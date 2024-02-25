@@ -114,6 +114,17 @@ h3 {
     text-align: center;
 }
 
-#balaton {
-    width: 100%;
+.lake {
+    border-radius: 8px;
+    float: left;
+    margin-right: 2%;
+    width: 200px;
+}
+
+p {
+    padding: 5px;
+}
+
+div.img {
+    margin: 2%;
 }
