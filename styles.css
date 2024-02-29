@@ -2,55 +2,102 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 200%;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a {
+  color: wheat;
+}
+
+nav#content a {
+  text-align: center;
+  padding: 5%;
 }
 
 #background {
-  background-image: url("background.jpeg");
+  background-image: url("wallpaper.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-div.box {
-  margin-top: 30px;
-  margin-left: 30px;
-  border: 2px solid rgb(37, 33, 33);
-  background-color: rgb(102, 106, 133);
-  width: 40%;
-  display: block;
-  margin: auto;
-  margin-top: 15%;
-  border-radius: 15px;
+nav#content {
+  max-width: 100%;
+  padding-top: 100px;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(9, minmax(60px, auto));
+  grid-gap: 25px;
 }
 
-ul {
-  list-style-type: none;
-  overflow: hidden;
+#one {
+  grid-column-end: 9;
+  grid-column-start: 3;
+  grid-row: 1;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: rgb(94, 115, 121);
 }
 
-li a {
-  display: block;
-  text-decoration: none;
-  color: black;
-  padding: 20px;
-  text-align: center;
-  font-size: 40px;
+#one:hover {
+  background-color: rgb(163, 179, 183);
 }
 
-li a:hover {
-  background-color: rgb(133, 162, 183);
-  border-radius: 15px;
+#two {
+  grid-column-end: 9;
+  grid-column-start: 3;
+  grid-row: 2;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: rgb(94, 115, 121);
 }
 
-li::after {
-  content: "";
-  clear: both;
-  display: table;
+#two:hover {
+  background-color: rgb(163, 179, 183);
 }
 
-a {
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+#three {
+  grid-column-end: 9;
+  grid-column-start: 3;
+  grid-row: 3;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: rgb(94, 115, 121);
+}
+
+#three:hover {
+  background-color: rgb(163, 179, 183);
+}
+
+#four {
+  grid-column-end: 9;
+  grid-column-start: 3;
+  grid-row: 4;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: rgb(94, 115, 121);
+}
+
+#four:hover {
+  background-color: rgb(163, 179, 183);
+}
+
+nav#footer {
+  grid-column-end: 9;
+  grid-column-start: 3;
+  grid-row: 9;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: rgb(94, 115, 121);
+  color: wheat;
+  grid-column: span 0.5;
 }
