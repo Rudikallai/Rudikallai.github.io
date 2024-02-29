@@ -43,7 +43,7 @@ nav#content {
   grid-column-end: 9;
   grid-column-start: 3;
   grid-row: 1;
-  border: 1px solid black;
+  border: 1px solid wheat;
   border-radius: 8px;
   background-color: rgb(94, 115, 121);
 }
@@ -56,7 +56,7 @@ nav#content {
   grid-column-end: 9;
   grid-column-start: 3;
   grid-row: 2;
-  border: 1px solid black;
+  border: 1px solid wheat;
   border-radius: 8px;
   background-color: rgb(94, 115, 121);
 }
@@ -69,7 +69,7 @@ nav#content {
   grid-column-end: 9;
   grid-column-start: 3;
   grid-row: 3;
-  border: 1px solid black;
+  border: 1px solid wheat;
   border-radius: 8px;
   background-color: rgb(94, 115, 121);
 }
@@ -82,7 +82,7 @@ nav#content {
   grid-column-end: 9;
   grid-column-start: 3;
   grid-row: 4;
-  border: 1px solid black;
+  border: 1px solid wheat;
   border-radius: 8px;
   background-color: rgb(94, 115, 121);
 }
