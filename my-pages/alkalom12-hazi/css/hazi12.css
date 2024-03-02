@@ -8,120 +8,419 @@ body {
     background-color: rgb(34, 34, 34);
 }
 
-div#content {
-    max-width: 90%;
-    margin:0 auto;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(20, minmax(50px, auto));
-    grid-gap: 20px;
-    background-color: rgb(34, 34, 34);
+@media only screen and (min-width: 480px) {
+
+    div#content {
+        max-width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(20, minmax(50px, auto));
+        grid-gap: 20px;
+        background-color: rgb(34, 34, 34);
+    }
+
+    div#content div {
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+    #one {
+        grid-column: span 6;
+        grid-row: span 1;
+        padding: 4%;
+    }
+
+    /*links*/
+    #link1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+    }
+
+    #link2 {
+        grid-row: 2;
+        grid-column-end: 3;
+        grid-column-start: 5;
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+    }
+
+    #link3 {
+        grid-row: 2;
+        grid-column-end: 5;
+        grid-column-start: 7;
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+    }
+
+    /*links*/
+
+    #three {
+        grid-row: 3;
+        grid-column: span 2;
+        grid-row: span 4;
+        padding: 5%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid wheat;
+    }
+
+    #two {
+        grid-column: span 4;
+        grid-row: span 3;
+    }
+
+    #four {
+        grid-column: span 4;
+        grid-row: span 1;
+        padding: 5%;
+    }
+
+    p {
+        padding: 5%;
+    }
+
+    #five {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: span 5;
+    }
+
+    #six {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row: span 5;
+    }
+
+    #seven {
+        grid-row: 12;
+    }
+
+    #eight {
+        grid-row: 12;
+    }
+
+    #nine {
+        grid-row: 12;
+    }
+
+    #ten {
+        grid-column: span 6;
+        grid-row: span 1;
+        grid-row: 13;
+    }
+
 }
 
-div#content div {
-    background-color: rgb(77, 95, 95);
-    text-align: center;
-    border-radius: 8px;
-    font-size: 20px;
+
+
+
+@media only screen and (max-width: 960px) {
+    div#content {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(20, minmax(50px, auto));
+        grid-gap: 20px;
+        background-color: rgb(34, 34, 34);
+    }
+
+    div#content div {
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+    #one {
+        grid-column: span 6;
+        grid-row: span 1;
+        padding: 4%;
+    }
+
+    /*links*/
+    #link1 {
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+        grid-row: 2;
+        grid-column: span 6;
+    }
+
+    #link2 {
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+        grid-row: 3;
+        grid-column: span 6;
+    }
+
+    #link3 {
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+        grid-row: 4;
+        grid-column: span 6;
+    }
+
+    /*links*/
+
+    #three {
+        padding: 5%;
+        grid-row: 5;
+        grid-column: span 6;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid wheat;
+        grid-row: 6;
+    }
+
+    #two {
+        grid-row: 7;
+        grid-column: span 6;
+    }
+
+    #four {
+        
+    }
+
+    p {
+        padding: 5%;
+    }
+
+    #five {
+        grid-row: 9;
+        grid-column: span 6;
+    }
+
+    #six {
+        grid-row: 10;
+        grid-column: span 6;
+    }
+
+    #seven {
+        grid-row: 12;
+    }
+
+    #eight {
+        grid-row: 12;
+    }
+
+    #nine {
+        grid-row: 12;
+    }
+
+    #ten {
+        grid-column: span 6;
+        grid-row: span 1;
+        grid-row: 13;
+    }
 }
 
-#one {
-    grid-column: span 6;
-    grid-row: span 1;
-    padding: 4%;
+@media only screen and (min-width: 600px) {
+    div#content {
+        max-width: 90%;
+    }
 }
 
-/*links*/
-#link1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    background-color: rgb(77, 95, 95);
-    text-align: center;
-    border-radius: 8px;
-    text-decoration: none;
-    padding-top: 15px;
-    color: white;
+@media only screen and (min-width: 1200px) {
+
+    div#content {
+        max-width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(20, minmax(50px, auto));
+        grid-gap: 20px;
+        background-color: rgb(34, 34, 34);
+    }
+
+    div#content div {
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+    #one {
+        grid-column: span 6;
+        grid-row: span 1;
+        padding: 4%;
+        grid-row: 1;
+    }
+
+    /*links*/
+    #link1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+        grid-row: 2;
+    }
+
+    #link2 {
+        grid-row: 2;
+        grid-column-end: 3;
+        grid-column-start: 5;
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+    }
+
+    #link3 {
+        grid-row: 2;
+        grid-column-end: 5;
+        grid-column-start: 7;
+        background-color: rgb(162, 162, 162);
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        padding-top: 15px;
+        color: white;
+    }
+
+    /*links*/
+
+    #three {
+        grid-row: 3;
+        grid-column: span 2;
+        grid-row: span 3;
+        padding: 5%;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid wheat;
+    }
+
+    #two {
+            grid-column: span 4;
+            grid-row: span 3;
+            grid-row: 3;
+    }
+
+    #four {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: span 1;
+        grid-row: 4;
+        padding: 5%;
+    }
+
+    p {
+        padding: 5%;
+    }
+
+    #five {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: span 5;
+    }
+
+    #six {
+        grid-column-start: 3;
+        grid-column-end: 7;
+        grid-row: span 5;
+    }
+
+    #seven {
+        grid-row: 12;
+    }
+
+    #eight {
+        grid-row: 12;
+    }
+
+    #nine {
+        grid-row: 12;
+    }
+
+    #ten {
+        grid-column: span 6;
+        grid-row: span 1;
+        grid-row: 13;
+    }
+
 }
 
-#link2 {
-    grid-row: 2;
-    grid-column-end: 3;
-    grid-column-start: 5;
-    background-color: rgb(77, 95, 95);
-    text-align: center;
-    border-radius: 8px;
-    text-decoration: none;
-    padding-top: 15px;
-    color: white;
-}
+@media only screen and (min-width: 960px) {
+    #three {
+        grid-row: 3;
+        grid-column: span 2;
+        grid-row: span 3;
+        padding: 5%;
+    }
 
-#link3 {
-    grid-row: 2;
-    grid-column-end: 5;
-    grid-column-start: 7;
-    background-color: rgb(77, 95, 95);
-    text-align: center;
-    border-radius: 8px;
-    text-decoration: none;
-    padding-top: 15px;
-    color: white;
-}
-/*links*/
+    img {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid wheat;
+    }
 
-#three {
-    grid-row: 3;
-    grid-column: span 2;
-    grid-row: span 4;
-    padding: 5%;
-}
+    #two {
+            grid-column: span 4;
+            grid-row: span 3;
+            grid-row: 3;
+    }
 
-img {
-    width: 100%;
-    border-radius: 8px;
-    border: 1px solid wheat;
-}
+    
+    #four {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: span 1;
+        grid-row: 4;
+        padding: 5%;
+    }
 
-#two {
-    grid-column: span 4;
-    grid-row: span 3;
-}
+    #five {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row: 7;
+    }
 
-#four {
-    grid-column: span 4;
-    grid-row: span 1;
-    padding: 5%;
-}
-
-p {
-    padding: 5%;
-}
-
-#five {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: span 5;
-}
-
-#six {
-    grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row: span 5;
-}
-
-#seven {
-    grid-row: 12;
-}
-
-#eight {
-    grid-row: 12;
-}
-
-#nine {
-    grid-row: 12;
-}
-
-#ten {
-    grid-column: span 6;
-    grid-row: span 1;
-    grid-row: 13;
+    #six {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row: 5;
+    }
 }
