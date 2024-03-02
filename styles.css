@@ -2,15 +2,16 @@ body {
     
     place-content: center;
     -webkit-tap-highlight-color: transparent;
+    background-color: #8d9ca0;
 }
 
-#background {
+/*#background {
     background-image: url("wallpaper.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-}
+}*/
 
 a {
     text-decoration: none;
@@ -20,8 +21,6 @@ a {
 div.menu {
     border: 2px solid wheat;
     color: wheat;
-    top: 4%;
-    margin-bottom: 170%;
     position: relative;
     padding: 20px;
     background: #2f535c;
@@ -30,8 +29,7 @@ div.menu {
     width: 60%;
     text-align: center;
     margin: 0 auto;
-    /*box-shadow: 7px 7px 15px rgba(255, 255, 255, 0.15), -7px -7px 20px rgb(255, 255, 255), inset 0px 0px 4px rgba(255, 255, 255, 0.2), inset 7px 7px 15px rgba(255, 255, 255, 0), inset -7px -7px 20px rgba(255, 255, 255, 0), 0px 0px 4px rgba(255, 255, 255, 0);
-*/
+    
 
 
 
