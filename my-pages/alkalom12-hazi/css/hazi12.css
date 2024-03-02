@@ -4,22 +4,23 @@
     padding: 0;
 }
 
+body {
+    background-color: rgb(34, 34, 34);
+}
+
 div#content {
-    max-width: 85%;
-    padding-top: 2%;
-    padding: 2%;
+    max-width: 90%;
     margin:0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(10, minmax(150px, auto));
+    grid-template-rows: repeat(20, minmax(50px, auto));
     grid-gap: 10px;
-    background-color: rgb(176, 226, 210);
+    background-color: rgb(34, 34, 34);
 }
 
 div#content div {
-background-color: rgb(77, 95, 95);
+    background-color: rgb(77, 95, 95);
     padding: 5%;
-    border-radius: 8px;
     text-align: center;
 }
 
@@ -28,15 +29,57 @@ background-color: rgb(77, 95, 95);
     grid-row: span 1;
 }
 
-#two {
-    grid-row: 2;
-    grid-area: span 3;
-    grid-column: span 2;
+/*links*/
+#link1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(77, 95, 95);
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    padding-top: 15px;
+    color: white;
 }
 
+#link2 {
+    grid-row: 2;
+    grid-column-end: 3;
+    grid-column-start: 5;
+    background-color: rgb(77, 95, 95);
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    padding-top: 15px;
+    color: white;
+}
+
+#link3 {
+    grid-row: 2;
+    grid-column-end: 5;
+    grid-column-start: 7;
+    background-color: rgb(77, 95, 95);
+    text-align: center;
+    border-radius: 8px;
+    text-decoration: none;
+    padding-top: 15px;
+    color: white;
+}
+/*links*/
+
 #three {
+    grid-row: 3;
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#two {
     grid-column: span 4;
-    grid-row: span 2;
+    grid-row: span 3;
 }
 
 #four {
@@ -45,12 +88,31 @@ background-color: rgb(77, 95, 95);
 }
 
 #five {
-    grid-column: span 6;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: span 5;
+}
+
+#six {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row: span 5;
+}
+
+#seven {
+    grid-row: 12;
+}
+
+#eight {
+    grid-row: 12;
+}
+
+#nine {
+    grid-row: 12;
 }
 
 #ten {
     grid-column: span 6;
     grid-row: span 1;
-    grid-row: 10;
+    grid-row: 13;
 }
-
