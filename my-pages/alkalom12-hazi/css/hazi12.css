@@ -14,19 +14,21 @@ div#content {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(20, minmax(50px, auto));
-    grid-gap: 10px;
+    grid-gap: 20px;
     background-color: rgb(34, 34, 34);
 }
 
 div#content div {
     background-color: rgb(77, 95, 95);
-    padding: 5%;
     text-align: center;
+    border-radius: 8px;
+    font-size: 20px;
 }
 
 #one {
     grid-column: span 6;
     grid-row: span 1;
+    padding: 4%;
 }
 
 /*links*/
@@ -70,11 +72,13 @@ div#content div {
     grid-row: 3;
     grid-column: span 2;
     grid-row: span 4;
+    padding: 5%;
 }
 
 img {
     width: 100%;
     border-radius: 8px;
+    border: 1px solid wheat;
 }
 
 #two {
@@ -85,6 +89,11 @@ img {
 #four {
     grid-column: span 4;
     grid-row: span 1;
+    padding: 5%;
+}
+
+p {
+    padding: 5%;
 }
 
 #five {
