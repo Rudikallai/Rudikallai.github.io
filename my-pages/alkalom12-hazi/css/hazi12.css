@@ -894,7 +894,22 @@ iframe {
 .social {
     color: wheat;
     text-align: center;
-    padding: 20%;
+    padding: 5%;
+}
+
+.social-img {
+    padding-top: 5%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.back a {
+    padding: 2%;
+    background-color: #757373;
+}
+
+.back {
+    margin-top: 10%;
 }
 
 .top {
