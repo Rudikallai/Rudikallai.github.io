@@ -920,3 +920,10 @@ iframe {
         font-size: 120%;
     }
 }
+
+
+.social {
+    color: wheat;
+    text-align: center;
+    padding: 20%;
+}
