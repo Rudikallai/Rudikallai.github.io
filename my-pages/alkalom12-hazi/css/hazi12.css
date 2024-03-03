@@ -10,6 +10,7 @@ body {
 
 p {
     padding: 5%;
+    padding-top: 10%;
 }
 
 div#content {
@@ -679,8 +680,13 @@ iframe {
 }
 
 @media only screen and (max-width: 400px) {
-    .icon-bar a { padding: 12px;}
-    div.top h1 {padding: 12px;}
+    .icon-bar a {
+        padding: 12px;
+    }
+
+    div.top h1 {
+        padding: 12px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -928,4 +934,151 @@ iframe {
     transition: all 0.3s ease;
     padding: 16px;
     color: white;
+}
+
+#araink1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: span 3;
+    border-radius: 8px;
+}
+
+#araink2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: span 3;
+    border-radius: 8px;
+    background-color: rgb(204, 204, 204);
+    padding: 3%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#araink3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: span 4;
+    border-radius: 8px;
+    background-color: rgb(204, 204, 204);
+    padding: 3%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#araink4 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row: span 4;
+    border-radius: 8px;
+}
+
+#araink5 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row: span 6;
+    border-radius: 8px;
+    background-color: rgb(204, 204, 204);
+    padding: 3%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#araink6 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row: span 10;
+    border-radius: 8px;
+    background-color: rgb(204, 204, 204);
+    padding: 3%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  input {
+    min-height: 30px;
+    border-radius: 8px;
+  }
+
+  textarea {
+    height: 100px;
+    border-radius: 8px;
+  }
+
+#araink10 {
+    grid-row: 30;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row: span 7;
+    border-radius: 8px;
+    background-color: rgb(204, 204, 204);
+    padding: 3%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#araink-footer {
+    grid-row: 35;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row: span 7;
+    border-radius: 8px;
+    background-color: rgb(204, 204, 204);
+    padding: 3%;
+    border-radius: 8px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 855px) {
+    div#content {
+        width: 85%;
+        margin-left: 10%;
+    }
+
+    #araink1 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    #araink2 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    #araink4 {
+        grid-row: 9;
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    #araink3 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
 }
