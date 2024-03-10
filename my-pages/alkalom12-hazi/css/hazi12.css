@@ -4,14 +4,24 @@
     padding: 0;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(35, 35, 35);
 }
 
-p {
-    padding: 5%;
-    padding-top: 15%;
-}
+
+
+
+
+
+
+
+/*Főoldal*/
 
 div#content {
     max-width: 90%;
@@ -25,12 +35,9 @@ div#content {
     background-color: rgb(35, 35, 35);
 }
 
-/*div#content div {
-background-color: rgb(204, 204, 204);
-    padding: 3%;
-    border-radius: 8px;
-    text-align: center;
-}*/
+p.fo {
+    padding: 5%;
+}
 
 img {
     width: 100%;
@@ -125,7 +132,7 @@ img {
     grid-row: 3;
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row: span 6;
+    grid-row: span 4;
     background-color: rgb(204, 204, 204);
     padding: 10%;
     padding-top: 15%;
@@ -155,7 +162,8 @@ h2 {
 
 #five {
     grid-row: 12;
-    grid-column: span 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
     grid-row: span 5;
     background-color: rgb(204, 204, 204);
     padding: 10%;
@@ -166,30 +174,22 @@ h2 {
 
 #img2 {
     grid-row: 12;
-    grid-column: span 3;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row: span 3;
     border-radius: 8px;
 }
 
 #seven {
     grid-row: 15;
-    grid-column: span 3;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row: span 2;
     background-color: rgb(204, 204, 204);
     padding: 3%;
     border-radius: 8px;
     text-align: center;
 }
-
-/*#eight {
-    grid-row: 13;
-    grid-column: span 6;
-    grid-row: span 7;
-    background-color: rgb(204, 204, 204);
-    padding: 0;
-    border-radius: 8px;
-    text-align: center;
-}*/
 
 section {
     grid-row: 9;
@@ -198,11 +198,8 @@ section {
     grid-row: span 7;
 }
 
-/* Slider */
+
 #slider {
-
-
-
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -256,16 +253,7 @@ section {
     height: 100%;
 }
 
-/* Legend 
-  .legend{
-    border:500px solid transparent;
-    border-left:800px solid rgba(52, 73, 94, .7);
-    border-bottom:0;
-    position:absolute;
-    bottom:0;
-  }*/
 
-/* Contents */
 .content {
     width: 100%;
     height: 100%;
@@ -275,7 +263,7 @@ section {
 
 
 
-/* Animation */
+
 @-webkit-keyframes slide {
 
     0%,
@@ -622,23 +610,18 @@ section {
     }
 }
 
-/* main */
-/* Reset */
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
-html {
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-}
+
 
 
 #ten {
     grid-row: 21;
-    grid-column: span 6;
+    grid-column: span 9;
     background-color: rgb(204, 204, 204);
     padding: 3%;
     border-radius: 8px;
@@ -647,7 +630,7 @@ html {
 
 #footer {
     grid-row: 22;
-    grid-column: span 6;
+    grid-column: span 9;
     background-color: rgb(204, 204, 204);
     padding: 3%;
     border-radius: 8px;
@@ -658,7 +641,7 @@ iframe {
     border-radius: 8px;
 }
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+
 .icon-bar {
     padding: 0%;
     position: fixed;
@@ -668,7 +651,7 @@ iframe {
     transform: translateY(-50%);
 }
 
-/* Style the icon bar links */
+
 .icon-bar a {
     display: block;
     text-align: center;
@@ -678,7 +661,7 @@ iframe {
     font-size: 20px;
 }
 
-/* Style the social media icons with color, if you want */
+
 .icon-bar a:hover {
     background-color: #000;
 }
@@ -718,25 +701,17 @@ iframe {
     }
 }
 
-@media only screen and (min-width: 800px) {
-    p {
-        font-size: 85%;
-    }
-}
-
 @media only screen and (max-width: 800px) {
-    div#content {
-        width: 85%;
-        margin-left: 10%;
-    }
 
-    p {
-        font-size: 110%;
+
+    p.fo {
+        font-size: large;
+        padding: 5%;
     }
 
     #one {
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end:9;
         grid-row: 1;
         background-color: rgb(204, 204, 204);
         padding: 3%;
@@ -745,22 +720,9 @@ iframe {
     }
 
     #link1 {
-        background-color: rgb(204, 204, 204);
+        background-color: rgb(124, 124, 124);
         padding: 2%;
         grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row: 2;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 8px;
-        border: 2px solid black;
-        color: black;
-    }
-
-    #link2 {
-        background-color: rgb(204, 204, 204);
-        padding: 2%;
-        grid-column-start: 3;
         grid-column-end: 5;
         grid-row: 2;
         text-align: center;
@@ -770,11 +732,11 @@ iframe {
         color: black;
     }
 
-    #link3 {
-        background-color: rgb(204, 204, 204);
+    #link2 {
+        background-color: rgb(124, 124, 124);
         padding: 2%;
         grid-column-start: 5;
-        grid-column-end: 7;
+        grid-column-end: 9;
         grid-row: 2;
         text-align: center;
         text-decoration: none;
@@ -783,22 +745,62 @@ iframe {
         color: black;
     }
 
-    #img1 {
-        grid-row: 3;
+    #link3 {
+        background-color: rgb(124, 124, 124);
+        padding: 2%;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 5;
+        grid-row: 3;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 2px solid black;
+        color: black;
+    }
+
+    #link4 {
+        background-color: rgb(124, 124, 124);
+        padding: 2%;
+        grid-column-start: 5;
+        grid-column-end: 9;
+        grid-row: 3;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 8px;
+        border: 2px solid black;
+        color: black;
+    }
+
+    #link1:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    #link2:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    #link3:hover {
+        background-color: rgb(204, 204, 204);
+    }
+    
+    #link4:hover {
+        background-color: rgb(204, 204, 204);
+    }
+
+    #img1 {
+        grid-row: 4;
+        grid-column-start: 1;
+        grid-column-end: 9;
         grid-row: span 3;
         border-radius: 8px;
     }
 
     #three {
-        grid-row: 4;
+        grid-row: 5;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
         grid-row: span 3;
         background-color: rgb(204, 204, 204);
-        padding: 10%;
-        padding-top: 15%;
         border-radius: 8px;
         text-align: center;
     }
@@ -813,9 +815,9 @@ iframe {
     }
 
     #four {
-        grid-row: 5;
+        grid-row: 6;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
         grid-row: span 3;
         background-color: rgb(204, 204, 204);
         padding: 10%;
@@ -825,7 +827,7 @@ iframe {
 
     #five {
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
         grid-row: span 5;
         background-color: rgb(204, 204, 204);
         padding: 10%;
@@ -835,17 +837,17 @@ iframe {
     }
 
     #img2 {
-        grid-row: 7;
+        grid-row: 8;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
         grid-row: span 3;
         border-radius: 8px;
     }
 
     #seven {
-        grid-row: 8;
+        grid-row: 9;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
         grid-row: span 2;
         background-color: rgb(204, 204, 204);
         padding: 3%;
@@ -853,19 +855,9 @@ iframe {
         text-align: center;
     }
 
-    /*#eight {
-        grid-row: 13;
-        grid-column: span 6;
-        grid-row: span 7;
-        background-color: rgb(204, 204, 204);
-        padding: 0;
-        border-radius: 8px;
-        text-align: center;
-    }*/
-
     #ten {
-        grid-row: 29;
-        grid-column: span 6;
+        grid-row: 30;
+        grid-column: span 8;
         background-color: rgb(204, 204, 204);
         padding: 3%;
         border-radius: 8px;
@@ -873,8 +865,8 @@ iframe {
     }
 
     #footer {
-        grid-row: 30;
-        grid-column: span 6;
+        grid-row: 31;
+        grid-column: span 8;
         background-color: rgb(204, 204, 204);
         padding: 3%;
         border-radius: 8px;
@@ -884,47 +876,73 @@ iframe {
     section {
         grid-row: 10;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
         grid-row: span 7;
     }
 }
 
+@media only screen and (min-width: 801px) {
+    p.fo {
+        font-size: 79%;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    p.fo {
+        font-size: 83%;
+    }
+}
+
 @media only screen and (min-width: 900px) {
-    p {
-        font-size: 90%;
+    p.fo {
+        font-size: 87%;
     }
 }
 
-@media only screen and (min-width: 980px) {
-    p {
-        font-size: 95%;
+@media only screen and (min-width: 950px) {
+    p.fo {
+        font-size: 91%;
     }
 }
 
-@media only screen and (min-width: 1000px) {
-    p {
-        font-size: 105%;
+@media only screen and (min-width: 1080px) {
+    p.fo {
+        font-size: 102%;
     }
 }
 
-@media only screen and (min-width: 1100px) {
-    p {
-        font-size: 110%;
+@media only screen and (min-width: 1150px) {
+    p.fo {
+        font-size: 108%;
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    p {
-        font-size: 115%;
+@media only screen and (min-width: 1250px) {
+    p.fo {
+        font-size: 112%;
     }
 }
 
-@media only screen and (min-width: 1300px) {
-    p {
-        font-size: 120%;
+@media only screen and (min-width: 1350px) {
+    p.fo {
+        font-size: 116%;
     }
 }
 
+/*Főoldal*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*Social*/
 
 .social {
     color: wheat;
@@ -947,6 +965,16 @@ iframe {
     margin-top: 10%;
 }
 
+/*Social*/
+
+
+
+
+
+
+
+
+/*Top button*/
 .top {
     background-color: #757272;
     padding: 0%;
@@ -967,53 +995,64 @@ iframe {
     padding-bottom: 7px;
     color: white;
 }
+/*Top button*/
+
+
+
+
+
+
+
+
+
+
 
 
 /*Áraink aloldal*/
 
 #araink1 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: span 3;
     border-radius: 8px;
 }
 
 #araink2 {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row: span 3;
     border-radius: 8px;
     background-color: rgb(204, 204, 204);
-    padding: 3%;
+    padding: 10%;
     border-radius: 8px;
     text-align: center;
 }
 
 #araink3 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: span 4;
     border-radius: 8px;
     background-color: rgb(204, 204, 204);
-    padding: 3%;
+    padding: 10%;
     border-radius: 8px;
     text-align: center;
 }
 
 #araink4 {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row: span 4;
     border-radius: 8px;
 }
 
 #araink5 {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 9;
     grid-row: span 6;
     border-radius: 8px;
     background-color: rgb(204, 204, 204);
-    padding: 3%;
+    padding: 7%;
     border-radius: 8px;
     text-align: center;
 }
@@ -1038,7 +1077,7 @@ tr:nth-child(even) {
 
 #araink6 {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 9;
     grid-row: span 10;
     border-radius: 8px;
     background-color: rgb(204, 204, 204);
@@ -1053,23 +1092,27 @@ form {
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 input {
     min-height: 30px;
-    border-radius: 8px;
+    border-radius: 3px;
+}
+
+input.submit:hover {
+    background-color: #677593;
 }
 
 textarea {
     height: 100px;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 
 #araink10 {
     grid-row: 25;
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 9;
     grid-row: span 7;
     border-radius: 8px;
     background-color: rgb(204, 204, 204);
@@ -1080,14 +1123,14 @@ textarea {
 
 #araink-footer {
     grid-row: 33;
-    grid-column: span 6;
+    grid-column: span 8;
     background-color: rgb(204, 204, 204);
     padding: 3%;
     border-radius: 8px;
     text-align: center;
 }
 
-@media only screen and (max-width: 855px) {
+@media only screen and (max-width: 800px) {
     div#content {
         width: 85%;
         margin-left: 10%;
@@ -1095,27 +1138,69 @@ textarea {
 
     #araink1 {
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
     }
 
     #araink2 {
+        grid-row: 7;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
     }
 
     #araink4 {
-        grid-row: 9;
+        grid-row: 8;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
     }
 
     #araink3 {
+        grid-row: 9;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
     }
 
     #araink-footer {
-        grid-row: 37;
+        grid-row: 33;
+    }
+
+    #araink5 {
+        padding: 2%;
+    }
+}
+
+@media only screen and (min-width: 801px) {
+    p.araink {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    p.araink {
+        font-size: 84%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    p.araink {
+        font-size: 90%;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    p.araink {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    p.araink {
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    p.araink {
+        font-size: 125%;
     }
 }
 
@@ -1130,16 +1215,18 @@ textarea {
 
 #kontakt1 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: span 5;
     background-color: rgb(204, 204, 204);
     border-radius: 8px;
     text-align: center;
+    padding: 5%;
+    padding-top: 10%;
 }
 
 #kontakt2 {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row: span 5;
     background-color: rgb(204, 204, 204);
     border-radius: 8px;
@@ -1148,7 +1235,7 @@ textarea {
 
 #kontakt3 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: span 5;
     background-color: rgb(204, 204, 204);
     border-radius: 8px;
@@ -1156,17 +1243,19 @@ textarea {
 }
 
 #kontakt4 {
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row: span 5;
     background-color: rgb(204, 204, 204);
     border-radius: 8px;
     text-align: center;
+    padding: 5%;
+    padding-top: 10%;
 }
 
 #kontakt5 {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 9;
     grid-row: span 8;
     background-color: rgb(204, 204, 204);
     border-radius: 8px;
@@ -1176,7 +1265,7 @@ textarea {
 #kontakt6 {
     grid-row: 22;
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 9;
     grid-row: span 5;
 }
 
@@ -1184,7 +1273,7 @@ textarea {
 
 #kontakt7 {
     grid-row: 26;
-    grid-column: span 6;
+    grid-column: span 8;
     background-color: rgb(204, 204, 204);
     padding: 3%;
     border-radius: 8px;
@@ -1213,7 +1302,7 @@ textarea {
     color: gray;
 }
 
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 800px) {
     div#content {
         width: 85%;
         margin-left: 10%;
@@ -1222,38 +1311,40 @@ textarea {
     #kontakt1 {
         grid-row: 4;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
+        padding: 10%;
     }
 
     #kontakt2 {
-        grid-row: 3;
+        grid-row: 5;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
     }
 
     #kontakt3 {
-        grid-row: 5;
+        grid-row: 7;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
     }
 
     #kontakt4 {
         grid-row: 6;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
+        padding: 10%;
     }
 
     #kontakt5 {
-        grid-row: 7;
+        grid-row: 8;
     }
 
     #kontakt6 {
-        grid-row: 8;
+        grid-row: 9;
         grid-column-start: 1;
-        grid-column-end: 7;
+        grid-column-end: 9;
     }
 
     #kontakt7 {
-        grid-row: 9;
+        grid-row: 10;
     }
 }
