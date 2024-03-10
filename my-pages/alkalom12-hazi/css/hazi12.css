@@ -19,7 +19,7 @@ div#content {
     padding: 2%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(9, minmax(50px, auto));
     grid-gap: 15px;
     background-color: rgb(35, 35, 35);
@@ -38,7 +38,7 @@ img {
 
 #one {
     grid-column-start: 1;
-    grid-column-end: 7;
+    grid-column-end: 9;
     grid-row: 1;
     background-color: rgb(204, 204, 204);
     padding: 3%;
@@ -47,7 +47,7 @@ img {
 }
 
 #link1 {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(124, 124, 124);
     padding: 2%;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -60,7 +60,7 @@ img {
 }
 
 #link2 {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(124, 124, 124);
     padding: 2%;
     grid-column-start: 3;
     grid-column-end: 5;
@@ -73,7 +73,7 @@ img {
 }
 
 #link3 {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(124, 124, 124);
     padding: 2%;
     grid-column-start: 5;
     grid-column-end: 7;
@@ -85,18 +85,46 @@ img {
     color: black;
 }
 
+#link4 {
+    background-color: rgb(124, 124, 124);
+    padding: 2%;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row: 2;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid black;
+    color: black;
+}
+
+#link1:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+#link2:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+#link3:hover {
+    background-color: rgb(204, 204, 204);
+}
+
+#link4:hover {
+    background-color: rgb(204, 204, 204);
+}
+
 #img1 {
     grid-row: 3;
     grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row: span 3;
+    grid-column-end: 5;
     border-radius: 8px;
 }
 
 #three {
     grid-row: 3;
-    grid-column-start: 4;
-    grid-column-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 9;
     grid-row: span 6;
     background-color: rgb(204, 204, 204);
     padding: 10%;
@@ -117,7 +145,7 @@ h2 {
 #four {
     grid-row: 6;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 5;
     grid-row: span 3;
     background-color: rgb(204, 204, 204);
     padding: 10%;
@@ -165,7 +193,8 @@ h2 {
 
 section {
     grid-row: 9;
-    grid-column: span 6;
+    grid-column-start: 2;
+    grid-column-end: 8;
     grid-row: span 7;
 }
 
