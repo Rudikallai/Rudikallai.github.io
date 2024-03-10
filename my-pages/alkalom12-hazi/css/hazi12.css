@@ -1100,9 +1100,7 @@ input {
     border-radius: 3px;
 }
 
-input.submit:hover {
-    background-color: #677593;
-}
+
 
 textarea {
     height: 100px;
@@ -1346,5 +1344,35 @@ textarea {
 
     #kontakt7 {
         grid-row: 10;
+    }
+}
+
+@media only screen and (min-width: 802px) {
+    p.kapcsolat {
+        font-size: 110%;
+    }
+    #kontakt1, #kontakt4 {
+        padding-top: 15%;
+        
+    }
+}
+
+@media only screen and (min-width: 870px) {
+    p.kapcsolat {
+        font-size: 100%;
+        padding: 3%;
+    }
+    #kontakt1, #kontakt4 {
+        padding-top: 15%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    p.kapcsolat {
+        font-size: 110%;
+        padding: 6%;
+    }
+    #kontakt1, #kontakt4 {
+        padding-top: 15%;
     }
 }
