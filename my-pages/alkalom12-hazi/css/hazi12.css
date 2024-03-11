@@ -191,58 +191,6 @@ h2 {
     text-align: center;
 }
 
-section {
-    grid-row: 9;
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row: span 7;
-}
-
-
-#slider {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-@keyframes load {
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: 0;
-    }
-}
-
-.slides {
-    width: 400%;
-    height: 100%;
-    position: relative;
-    -webkit-animation: slide 15s infinite;
-    -moz-animation: slide 15s infinite;
-    animation: slide 15s infinite;
-}
-
-.slider {
-    width: 25%;
-    height: 100%;
-    float: left;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-
-.slide img {
-    width: 100%;
-    height: 100%;
-}
-
 .image {
     width: 100%;
     height: 100%;
@@ -262,355 +210,6 @@ section {
 }
 
 
-
-
-@-webkit-keyframes slide {
-
-    0%,
-    100% {
-        margin-left: 0%;
-    }
-
-    21% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    46% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    71% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    96% {
-        margin-left: -300%;
-    }
-}
-
-@-moz-keyframes slide {
-
-    0%,
-    100% {
-        margin-left: 0%;
-    }
-
-    21% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    46% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    71% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    96% {
-        margin-left: -300%;
-    }
-}
-
-@keyframes slide {
-
-    0%,
-    100% {
-        margin-left: 0%;
-    }
-
-    21% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: -100%;
-    }
-
-    46% {
-        margin-left: -100%;
-    }
-
-    50% {
-        margin-left: -200%;
-    }
-
-    71% {
-        margin-left: -200%;
-    }
-
-    75% {
-        margin-left: -300%;
-    }
-
-    96% {
-        margin-left: -300%;
-    }
-}
-
-@-webkit-keyframes content-s {
-    0% {
-        left: -420px;
-    }
-
-    10% {
-        left: 0px;
-    }
-
-    30% {
-        left: 0px;
-    }
-
-    40% {
-        left: 0px;
-    }
-
-    50% {
-        left: 0px;
-    }
-
-    60% {
-        left: 0px;
-    }
-
-    70% {
-        left: 0;
-    }
-
-    80% {
-        left: -420px;
-    }
-
-    90% {
-        left: -420px;
-    }
-
-    100% {
-        left: -420px;
-    }
-}
-
-@-moz-keyframes content-s {
-    0% {
-        left: -420px;
-    }
-
-    10% {
-        left: 0px;
-    }
-
-    30% {
-        left: 0px;
-    }
-
-    40% {
-        left: 0px;
-    }
-
-    50% {
-        left: 0px;
-    }
-
-    60% {
-        left: 0px;
-    }
-
-    70% {
-        left: 0;
-    }
-
-    80% {
-        left: -420px;
-    }
-
-    90% {
-        left: -420px;
-    }
-
-    100% {
-        left: -420px;
-    }
-}
-
-@keyframes content-s {
-    0% {
-        left: -420px;
-    }
-
-    10% {
-        left: 20px;
-    }
-
-    15% {
-        left: 0px;
-    }
-
-    30% {
-        left: 0px;
-    }
-
-    40% {
-        left: 0px;
-    }
-
-    50% {
-        left: 0px;
-    }
-
-    60% {
-        left: 0px;
-    }
-
-    70% {
-        left: 0;
-    }
-
-    80% {
-        left: -420px;
-    }
-
-    90% {
-        left: -420px;
-    }
-
-    100% {
-        left: -420px;
-    }
-}
-
-@-webkit-keyframes on {
-
-    0%,
-    100% {
-        margin-left: 0%;
-    }
-
-    21% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: 15px;
-    }
-
-    46% {
-        margin-left: 15px;
-    }
-
-    50% {
-        margin-left: 30px;
-    }
-
-    71% {
-        margin-left: 30px;
-    }
-
-    75% {
-        margin-left: 45px;
-    }
-
-    96% {
-        margin-left: 45px;
-    }
-}
-
-@-moz-keyframes on {
-
-    0%,
-    100% {
-        margin-left: 0%;
-    }
-
-    21% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: 15px;
-    }
-
-    46% {
-        margin-left: 15px;
-    }
-
-    50% {
-        margin-left: 30px;
-    }
-
-    71% {
-        margin-left: 30px;
-    }
-
-    75% {
-        margin-left: 45px;
-    }
-
-    96% {
-        margin-left: 45px;
-    }
-}
-
-@keyframes on {
-
-    0%,
-    100% {
-        margin-left: 0%;
-    }
-
-    21% {
-        margin-left: 0%;
-    }
-
-    25% {
-        margin-left: 15px;
-    }
-
-    46% {
-        margin-left: 15px;
-    }
-
-    50% {
-        margin-left: 30px;
-    }
-
-    71% {
-        margin-left: 30px;
-    }
-
-    75% {
-        margin-left: 45px;
-    }
-
-    96% {
-        margin-left: 45px;
-    }
-}
-
-
 a {
     text-decoration: none;
     color: inherit;
@@ -620,7 +219,7 @@ a {
 
 
 #ten {
-    grid-row: 21;
+    grid-row: 12;
     grid-column: span 9;
     background-color: rgb(204, 204, 204);
     padding: 3%;
@@ -629,7 +228,7 @@ a {
 }
 
 #footer {
-    grid-row: 22;
+    grid-row: 13;
     grid-column: span 9;
     background-color: rgb(204, 204, 204);
     padding: 3%;
@@ -856,7 +455,7 @@ iframe {
     }
 
     #ten {
-        grid-row: 30;
+        grid-row: 23;
         grid-column: span 8;
         background-color: rgb(204, 204, 204);
         padding: 3%;
@@ -865,19 +464,12 @@ iframe {
     }
 
     #footer {
-        grid-row: 31;
+        grid-row: 24;
         grid-column: span 8;
         background-color: rgb(204, 204, 204);
         padding: 3%;
         border-radius: 8px;
         text-align: center;
-    }
-
-    section {
-        grid-row: 10;
-        grid-column-start: 1;
-        grid-column-end: 9;
-        grid-row: span 7;
     }
 }
 
@@ -1376,5 +968,105 @@ textarea {
         padding-top: 15%;
     }
 }
+
+.mySlides {
+    height: 500px;
+}
+
+
+#prog1 {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row: span 20;
+    background-color: rgb(204, 204, 204);
+    border-radius: 8px;
+    text-align: center;
+    padding: 5%;
+    padding-top: 10%;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1#main_title{
+    text-align: center;
+    padding: 10px;
+}
+
+.sliders {
+  display: none;
+  width:100%;
+}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  background-color: #ffffff5e;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .am-slider-prev:hover, .am-slider-next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.sliders {
+    height: 500px;
+}
+
+#prog2 {
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row: span 20;
+    background-color: rgb(204, 204, 204);
+    border-radius: 8px;
+    text-align: center;
+    padding: 10%;
+    padding-top: 10%;
+}
+
 
 

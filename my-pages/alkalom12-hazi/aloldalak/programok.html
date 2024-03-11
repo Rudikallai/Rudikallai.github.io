@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapcsolat | Noszvaj Treehouses</title>
     <link rel="stylesheet" href="../css/hazi12.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -39,73 +40,86 @@
             <h3>Áraink</h3>
         </a>
         <a id="link3" href="kontakt.html">
-            <h3>Kontakt</h3>
+            <h3>Kapcsolat</h3>
         </a>
 
         <a id="link4" href="programok.html">
             <h3>Programok</h3>
         </a>
 
-        <div id="kontakt1">
-            <p class="kapcsolat">
-                Érkezésé előtt örömmel segítünk Önnek összeállítani egy programajánlót a helyi látványosságokról, hogy
-                teljes
-                mértékben kihasználhassák Noszvaj és környéke kínálta lehetőségeket.</p>
+        <div id="prog1">
+            <h1 id="main_title"></h1>
 
-            <p class="kapcsolat">Az elsődleges programok között szerepelhet a helyi túrázási lehetőségek felfedezése, ahol gyönyörű
-                természeti látnivalókat, mint például a Szalajka-völgyet vagy a Bükk-hegység csúcsait fedezhetik fel
-                vendégeink.</p>
+            <div class="slideshow-container">
+                <img class="manual-slider sliders" src="../img/araink2.jpeg">
+                <img class="manual-slider sliders" src="../img/araink1.jpeg">
+                <img class="manual-slider sliders" src="../img/kontakt3.jpeg">
+                <img class="manual-slider sliders" src="../img/noszvaj.jpeg">
+                <img class="manual-slider sliders" src="../img/noszvaj3.jpeg">
+                <img class="manual-slider sliders" src="../img/kontakt4.jpeg">
 
-            <p class="kapcsolat">Kulturális érdekességek tekintetében ajánlhatunk látogatást a Noszvaji várromhoz vagy a Szent István
-                Templomhoz, hogy megismerjék a helyi történelmet és kulturális örökséget.
-            </p>
+                <button class="prev" onclick="plusSlider(-1)">&#10094;</button>
+                <button class="next" onclick="plusSlider(1)">&#10095;</button>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlider(1)"></span>
+                <span class="dot" onclick="currentSlider(2)"></span>
+                <span class="dot" onclick="currentSlider(3)"></span>
+                <span class="dot" onclick="currentSlider(4)"></span>
+                <span class="dot" onclick="currentSlider(5)"></span>
+                <span class="dot" onclick="currentSlider(6)"></span>
+            </div>
+            <script>var sliderIndex = 1;
+                function setSlider() {
+                    showSliders(sliderIndex);
+                }
+                //slider image index
+                function plusSlider(n) {
+                    showSliders(sliderIndex += n);
+                }
+                //dot index
+                function currentSlider(n) {
+                    showSliders(sliderIndex = n);
+                }
+
+                function showSliders(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("manual-slider");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { sliderIndex = 1 }
+                    if (n < 1) { sliderIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[sliderIndex - 1].style.display = "block";
+                    dots[sliderIndex - 1].className += " active";
+                }
+
+                //Manual Slide
+                setSlider();</script>
+        </div>
+
+        <div id="prog2">
+            <h2>Reggeli madárcsicsergésben</h2>
+            <p>Kezdjük a napot egy kellemes reggeli séta során az erdőben, ahol a fák lombjai között madárcsicsergésben
+                és friss levegőben gyönyörködhetünk. A természet ölelésében töltsünk néhány csendes percet, hogy
+                feltöltődjünk a napra.</p>
+            <h2>Kaland a Szalajka-völgyben</h2>
+            <p>Induljunk el a Szalajka-völgybe egy kis túrázásra! Fedezzük fel a kanyargós ösvényeket és a
+                kristálytiszta patakokat, miközben lenyűgöző természeti szépségekben gyönyörködhetünk. Ne felejtsük
+                otthon a kamerát, mert ezek a tájak emlékezetes pillanatokat kínálnak!</p>
+            <h2>Kulturális időutazás Noszvajban</h2>
+            <p>Látogassunk el Noszvaj történelmi részére, és fedezzük fel a város lenyűgöző kulturális örökségét.
+                Ismerjük meg a Noszvaji várrom titokzatos történeteit, és merüljünk el a Szent István Templom csodálatos
+                építészeti részleteiben.</p>
         </div>
 
 
-        <img src="../img/kontakt2.jpeg" alt="Noszvaj" id="kontakt2">
-
-
-        <img src="../img/kontakt3.jpeg" alt="Noszvaj" id="kontakt3">
-
-
-        <div id="kontakt4">
-            <p class="kapcsolat">
-                Szabadidős tevékenységek terén szívesen ajánlunk kerékpártúrákat a környéken, valamint lehetőséget
-                biztosítunk különféle szervezett programokhoz, mint például íjászat, lovaglás vagy borkóstoló.</p>
-
-            <p class="kapcsolat">És ha a vendégek inkább pihenni és kikapcsolódni szeretnének, akkor felhívjuk figyelmüket a szállásunk
-                kényelmes környezetére, ahol nyugodtan élvezhetik a természet közelségét és a csendet.</p>
-
-            <p class="kapcsolat">Összességében célunk, hogy vendégeinknek személyre szabott és változatos programajánlatokat kínáljunk,
-                hogy Noszvaj és környéke minden szépségét és lehetőségét kiélvezhessék.
-            </p>
-        </div>
-
-
-        <div id="kontakt5">
-            <h1 id="h">Kapcsolat</h1>
-                <h3 id="p">Ha felmerült Önben bármi kérdés, mi örömmel válaszolunk! Lépjen velünk kapcsolatba Telefonon, E-mailben vagy küldjön nekünk üzenetet itt az oldalon.</h3>
-
-                <h4 id="mail">E-mail címünk: <a href="mailto:noszvaj@hazi.hu">noszvaj@hazi.hu</a></h4>
-                <h4 id="mail">Telefonszámunk: <a href="tel:+36 30 123 4567">+36 30 123 4567</a></h4>
-
-                <form action="send_message.php" method="post">
-                    <label for="name">Név:</label>
-                    <input type="text" id="name" name="name" placeholder="Teljes név..." required>
-    
-                    <label for="phone">Telefonszám:</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Telefonszám..." required>
-    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="E-mail cím..." required>
-
-                    <label for="message">Üzenet:</label>
-                    <textarea id="message" name="message" placeholder="Üzenet..." required></textarea>
-    
-                    <input type="submit" value="Küldés">
-                </form>
-
-        </div>
+        
 
         <div id="kontakt6">
             <iframe
@@ -113,6 +127,7 @@
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+
 
         <div id="kontakt7">
             <h4>&copy; Noszvaj Treehouses | Minden jog fenntartva</h4>
