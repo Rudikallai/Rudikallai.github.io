@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proba</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/index.js" defer></script>
+</head>
+
+<body id="shop">
+
+
+
+
+
+
+
+    <main id="all">
+
+        <nav id="header">
+            <nav id="flex-header">
+                <nav id="logo">
+                    <a href="../index.html">Revive & Ride</a>
+                </nav>
+                <nav id="menu">
+                    <a href="../index.html">Back to front page</a>
+                    <a href="shop.html">shop</a>
+                    <a href="our-story.html">our story</a>
+                    <a href="contact.html">contact us</a>
+                    <!--<button><span class="material-symbols-outlined">account_circle</span></button>-->
+                    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
+                            class="material-symbols-outlined">account_circle</span></button>
+
+                    <div id="id01" class="modal">
+
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                            <div class="imgcontainer">
+                                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                                    title="Close Modal">&times;</span>
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                                <button id="login" type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </nav>
+            </nav>
+        </nav>
+
+
+        <a id="shop-content1" href="merch.html"><img src="../img/merch.webp" alt="merch">
+            <h2>Merch & Accessories</h2>
+        </a>
+
+        <a id="shop-content2" href="models.html"><img src="../img/models.jpeg" alt="models">
+            <h2>Models</h2>
+        </a>
+
+
+
+        <nav id="footer">
+            <nav id="flexfooter">
+                <nav id="one">
+                    <p>&copy; 2024 Revive & Ride | All rights reserved</p>
+                </nav>
+                <nav id="two">
+                    <a href="#">Subscribe to our news letter for the freshest news!</a>
+                </nav>
+                <nav id="three">
+                    <div class="icon-bar">
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </nav>
+
+            </nav>
+        </nav>
+
+    </main>
+</body>
+
+</html>
