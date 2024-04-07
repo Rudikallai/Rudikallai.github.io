@@ -31,9 +31,6 @@ img {
     width: 100%;
 }
 
-#all {}
-
-
 header {
     background-color: black;
     grid-column: span 12;
@@ -749,7 +746,7 @@ body#models {
     }
 
     #content4-text {
-        margin-right: 10%;
+        margin-right: 0%;
     }
 
     #content5 {
