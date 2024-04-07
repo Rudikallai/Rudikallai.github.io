@@ -21,18 +21,17 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(15, minmax(30px, auto));
+    grid-gap: 0px;
 }
 
 img {
     width: 100%;
 }
 
-#all {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(18, minmax(30px, auto));
-    grid-gap: 0px;
-}
+#all {}
 
 
 header {
@@ -56,8 +55,6 @@ header {
 .hambi {
     background-color: black;
     color: #ddd;
-
-
 }
 
 #logo {
@@ -153,81 +150,8 @@ header {
     transition: all 0.2s ease;
 }
 
-@media only screen and (max-width: 1030px) {
-
-    #logo h1 {
-        font-size: 150%;
-    }
-
-    #logo {
-        margin-left: 2%;
-    }
-
-    .hambi {
-        font-size: 90%;
-    }
-
-    .menu {
-        top: 5%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        background-color: rgb(163, 163, 163);
-        transition: 0.3s ease;
-    }
-
-    .active {
-        height: 0%;
-        visibility: collapse;
-        transition: all 0.3s ease;
-    }
-
-    #shop,
-    #login {
-        margin: 0;
-    }
-
-    #login {
-        margin-top: 5%;
-    }
-
-    #shop,
-    #login,
-    #story,
-    #contact {
-        font-size: 1.5rem;
-        margin-top: 5%;
-    }
-
-
-    .font1 {
-        visibility: collapse;
-        transition: 0.3s ease;
-    }
-
-    .font2 {
-        visibility: collapse;
-        transition: 0.2s ease;
-    }
-
-    .font3 {
-        visibility: collapse;
-        transition: 0.1s ease;
-    }
-
-    .font4 {
-        visibility: collapse;
-        transition: 0s ease;
-    }
-}
-
-
-
 #content1 {
     top: 9%;
-    grid-row: 2;
     position: relative;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -238,6 +162,8 @@ header {
 }
 
 #content1 video {
+    grid-column-start: 1;
+    grid-column-end: 12;
     width: 100%;
     position: relative;
     z-index: 998;
@@ -249,9 +175,9 @@ header {
     top: 77%;
     left: 7%;
     color: white;
-    font-size: 3rem;
+    font-size: 200%;
     font-weight: 300;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid white;
 }
 
 #content1 a {
@@ -260,7 +186,7 @@ header {
     top: 85%;
     left: 7%;
     color: white;
-    font-size: 2rem;
+    font-size: 150%;
     font-weight: 200;
     padding: 0.5%;
     border-radius: 5px;
@@ -275,16 +201,16 @@ header {
 #content2 {
     grid-column-start: 2;
     grid-column-end: 7;
-    margin: 17%;
+    margin-top: 30%;
 }
 
 #content2 h2 {
     font-size: 3rem;
-    padding: 10%;
+    padding: 7%;
 }
 
 #content2 p {
-    padding: 10%;
+    padding: 7%;
     font-size: 1.4rem;
     color: #000;
 }
@@ -292,7 +218,7 @@ header {
 #content3 {
     grid-column-start: 7;
     grid-column-end: 13;
-    padding-top: 17%;
+    margin-top: 30%;
 }
 
 #content3 img {
@@ -303,6 +229,7 @@ header {
 }
 
 #content4 {
+    margin-top: 5%;
     grid-column: span 13;
     background-color: black;
 }
@@ -357,6 +284,8 @@ header {
 }
 
 #content6 iframe {
+    margin: 5%;
+    width: 85%;
     border-radius: 5px;
     box-shadow: 0 1px 5px #252525;
 }
@@ -366,20 +295,44 @@ header {
     grid-column-end: 7;
 }
 
-#footer {
-    grid-column: span 13;
-    grid-row: 19;
-    grid-row: span 5;
-    background-color: black;
-    color: #ddd;
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, minmax(30px, auto));
+    grid-gap: 0px;
+    margin-bottom: 0%;
 }
 
-#flexfooter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 5%;
+#one {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: #000;
+    color: #ddd;
+    padding: 15% 5%;
+    text-align: center;
 }
+
+#two {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    background-color: #000;
+    color: #ddd;
+    padding: 15% 5%;
+    text-align: center;
+}
+
+#three {
+    grid-column-start: 9;
+    grid-column-end: 13;
+    background-color: #000;
+    color: #ddd;
+    padding: 15% 5%;
+    text-align: center;
+}
+
 
 #two a {
     color: #ddd;
@@ -392,8 +345,8 @@ header {
     transition: all 0.3s ease;
 }
 
-#three {
-    padding: 2%;
+#three.icon-bar {
+    margin-top: 5%;
 }
 
 .icon-bar a {
@@ -438,7 +391,7 @@ body#shop {
     background-size: cover;
 }
 
-#shop-all {
+#shop-body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(14, minmax(30px, auto));
@@ -620,7 +573,7 @@ body#models {
     background-size: cover;
 }
 
-#models-all {
+#models-body {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(15, minmax(30px, auto));
@@ -745,4 +698,161 @@ body#models {
 
 .turbo {
     margin-bottom: 10%;
+}
+
+
+
+@media only screen and (max-width: 660px) {
+
+    #content1 h5 {
+        display: none;
+    }
+
+    #content1 a {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 900px) {
+
+    #content1 {
+        font-size: 70%;
+    }
+
+    #content2 {
+        grid-column: span 13;
+        width: 100%;
+        padding: 2%;
+        margin: 0;
+        margin-top: 5%;
+    }
+
+    #content3 {
+        grid-column: span 12;
+        width: 100%;
+        margin-top: 1%;
+        margin-left: 13%;
+    }
+
+    #content4 {
+        margin-top: 10%;
+    }
+
+    #content4 img {
+        display: none;
+    }
+
+    #content4-text {
+        margin-right: 10%;
+    }
+
+    #content5 {
+        grid-column: span 12;
+    }
+
+    #content6 {
+        grid-column: span 12;
+        margin-left: 5%;
+    }
+
+    #flex-footer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, minmax(30px, auto));
+        grid-gap: 0px;
+    }
+
+    #one {
+        grid-column: span 12;
+        padding: 5%;
+    }
+
+    #two {
+        grid-column: span 12;
+        padding: 5%;
+    }
+
+    #three {
+        grid-column: span 12;
+        padding: 5%;
+        padding-bottom: 10%;
+    }
+
+
+
+
+
+
+    #logo h1 {
+        font-size: 150%;
+    }
+
+    #logo {
+        margin-left: 2%;
+    }
+
+    .hambi {
+        font-size: 90%;
+    }
+
+    .menu {
+        top: 5%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(163, 163, 163);
+        transition: 0.3s ease;
+    }
+
+    .active {
+        height: 0%;
+        visibility: collapse;
+        transition: all 0.3s ease;
+    }
+
+    #shop,
+    #login {
+        margin: 0;
+    }
+
+    #login {
+        margin-top: 5%;
+    }
+
+    #shop,
+    #login,
+    #story,
+    #contact {
+        font-size: 1.5rem;
+        margin-top: 5%;
+    }
+
+
+    .font1 {
+        visibility: collapse;
+        transition: 0.3s ease;
+    }
+
+    .font2 {
+        visibility: collapse;
+        transition: 0.2s ease;
+    }
+
+    .font3 {
+        visibility: collapse;
+        transition: 0.1s ease;
+    }
+
+    .font4 {
+        visibility: collapse;
+        transition: 0s ease;
+    }
 }
