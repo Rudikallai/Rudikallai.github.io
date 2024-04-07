@@ -33,7 +33,8 @@ img {
 
 header {
     background-color: black;
-    grid-column: span 12;
+    grid-column-start: 1;
+    grid-column-end: 13;
     width: 100%;
     z-index: 1004;
     position: fixed;
@@ -723,7 +724,7 @@ body#models {
     }
 
     #content2 {
-        grid-column: span 13;
+        grid-column: span 12;
         width: 100%;
         padding: 2%;
         margin: 0;
