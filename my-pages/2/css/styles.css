@@ -28,6 +28,31 @@ body {
     width: 100%;
 }
 
+#topBtn {
+    z-index: 1010;
+    background-color: #929595;
+    color: #3d3b3b;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    position: fixed;
+    top: 70%;
+    left: 94%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-transform: uppercase;
+    font-size: 160%;
+    border-radius: 6px;
+    display: none;
+}
+
+#topBtn:hover {
+    background-color: #343333;
+    color: #ddd;
+    transition: 0.2s ease;
+}
+
 img {
     width: 100%;
 }
@@ -245,6 +270,7 @@ header {
     padding: 10%;
     font-size: 1.4rem;
     color: #ddd;
+    margin-right: 8%;
 }
 
 #flex-content4 {
@@ -478,12 +504,7 @@ body#shop {
     color: #ddd;
 }
 
-#models-body {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, minmax(30px, auto));
-    grid-gap: 0px;
-}
+
 
 #models-content1 {
     position: relative;
@@ -736,6 +757,25 @@ body#models-body {
         width: 100%;
     } 
 
+    #topBtn {
+        z-index: 1010;
+        background-color: #929595;
+        color: #3d3b3b;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        position: fixed;
+        top: 70%;
+        left: 91%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-transform: uppercase;
+        font-size: 160%;
+        border-radius: 6px;
+        display: none;
+    }
+
     header {
         grid-column: span 9;
         width: 100%;
@@ -848,6 +888,19 @@ body#models-body {
 
     #shop-footer {
         margin-top: 25%;
+    }
+
+    body#models-body {
+        background-color: rgb(0, 0, 0);
+        background-image: url("../img/back.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(10, minmax(30px, auto));
+        grid-gap: 0px;
     }
 
     #models-content1 {
