@@ -722,8 +722,29 @@ body#models-body {
 
 @media only screen and (max-width: 900px) {
 
+    body {
+        background-color: rgb(0, 0, 0);
+        background-image: url("../img/back.jpeg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(15, minmax(30px, auto));
+        grid-gap: 0px;
+        width: 100%;
+    } 
+
+    header {
+        grid-column: span 9;
+        width: 100%;
+    }
+
     #content1 {
+        grid-column: span 12;
         font-size: 70%;
+        top: 23%;
     }
 
     #content1 video {
@@ -732,38 +753,63 @@ body#models-body {
 
     #content2 {
         grid-column: span 12;
-        width: 100%;
         padding: 2%;
         margin: 0;
         margin-top: 5%;
     }
 
+    #content2 p {
+        font-size: 170%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #content2 h2 {
+        margin-top: 5%;
+        font-size: 370%;
+        margin-left: 5%;
+    }
+
     #content3 {
         grid-column: span 12;
-        width: 100%;
         margin-top: 1%;
         margin-left: 13%;
+    }
+
+    #content3 img {
+        width: 85%;
     }
 
     #content4 {
         margin-top: 10%;
     }
 
-    #content4 img {
+    #content4-img {
         display: none;
     }
 
-    #content4-text {
+    #content4-text h2, p {
         margin-right: 0%;
+        margin-left: 0%;
     }
 
     #content5 {
         grid-column: span 12;
     }
 
+    #content5 h2 {
+        font-size: 270%;
+    }
+
+    #content5 p {
+        font-size: 170%;
+    }
+
     #content6 {
+        margin-top: 0%;
         grid-column: span 12;
-        margin-left: 0%;
+        margin-left: 5%;
+        margin-right: 0%;
     }
 
     #flex-footer {
@@ -821,7 +867,7 @@ body#models-body {
 
     #models-content4-text p {
         padding: 3% 2% 10% 2%;
-        margin-left: 70px;
+        margin-left: 50px;
         font-size: 100%;
         width: 100%;
     }
@@ -839,6 +885,7 @@ body#models-body {
     #models-content4-img h2 {
         top: 3%;
         left: 5%;
+        font-size: 180%;
     }
 
     #content7 {
