@@ -71,15 +71,18 @@ header {
     align-items: center;
 }
 
-#hambi {
-    font-size: 150%;
-    padding: 3.5%;
-}
+
 
 .hambi {
     background-color: black;
-    color: #ddd;
+    padding: 2%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
+
+
 
 #logo {
     color: #ddd;

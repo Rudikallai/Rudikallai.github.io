@@ -13,6 +13,18 @@ hamElement.addEventListener("click", function () {
     loginElement.classList.toggle("font4");
 });
 
+document.addEventListener('click', e => {
+  if(!menuElement.contains(e.target) && e.target !== hamElement) {
+    menuElement.classList.add("active");
+    shopElement.classList.add("font1");
+    storyElement.classList.add("font2");
+    contactElement.classList.add("font3");
+    loginElement.classList.add("font4");
+
+  }
+})
+
+
 let mybutton = document.getElementById("topBtn");
 
 window.onscroll = function() {scrollFunction()};
@@ -29,3 +41,4 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
