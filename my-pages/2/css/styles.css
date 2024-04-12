@@ -16,7 +16,7 @@ html {
 
 body {
     background-color: rgb(0, 0, 0);
-    background-image: url("../img/back.jpeg");
+    background-image: url("../img/background1.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -197,21 +197,22 @@ header {
 }
 
 #content1 h5 {
+    width: 50%;
     position: absolute;
     z-index: 999;
-    top: 77%;
-    left: 7%;
+    top: 80%;
+    left: 4%;
     color: white;
-    font-size: 200%;
-    font-weight: 300;
+    font-size: 250%;
+    font-weight: 500;
     border-bottom: 2px solid white;
 }
 
 #content1 a {
     position: absolute;
     z-index: 999;
-    top: 85%;
-    left: 7%;
+    top: 81%;
+    left: 57%;
     color: white;
     font-size: 150%;
     font-weight: 200;
@@ -228,24 +229,26 @@ header {
 #content2 {
     grid-column-start: 2;
     grid-column-end: 7;
-    margin-top: 30%;
+    margin-top: 27%;
 }
 
 #content2 h2 {
     font-size: 3rem;
     padding: 7%;
+    color: #000000;
 }
 
 #content2 p {
     padding: 7%;
     font-size: 1.4rem;
-    color: #000;
+    font-weight: 600;
+    color: #000000;
 }
 
 #content3 {
     grid-column-start: 7;
     grid-column-end: 13;
-    margin-top: 30%;
+    margin-top: 20%;
 }
 
 #content3 img {
@@ -748,7 +751,7 @@ body#models-body {
 
     body {
         background-color: rgb(0, 0, 0);
-        background-image: url("../img/back.jpeg");
+        background-image: url("../img/background1.jpeg");
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
