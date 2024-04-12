@@ -5,8 +5,10 @@ const storyElement = document.querySelector("#story");
 const contactElement = document.querySelector("#contact");
 const loginElement = document.querySelector("#login");
 
+
 hamElement.addEventListener("click", function () {
     menuElement.classList.toggle("active");
+
     shopElement.classList.toggle("font1");
     storyElement.classList.toggle("font2");
     contactElement.classList.toggle("font3");
