@@ -121,7 +121,7 @@ header {
 
 #logo h1 {
     font-weight: 400;
-    font-size: 250%;
+    font-size: 200%;
 }
 
 #logo a {
@@ -538,9 +538,9 @@ footer {
     width: 60%;
 }
 
-#models-content4-img img {
+/*#models-content4-img img {
     border-right: 4px solid white;
-}
+}*/
 
 
 
