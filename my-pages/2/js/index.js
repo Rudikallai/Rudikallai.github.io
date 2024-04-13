@@ -4,10 +4,20 @@ const shopElement = document.querySelector("#shop");
 const storyElement = document.querySelector("#story");
 const contactElement = document.querySelector("#contact");
 const loginElement = document.querySelector("#login");
+const closeBtn = document.querySelector(".closeBtn");
+
+closeBtn.addEventListener("click", function () {
+  menuElement.classList.toggle("active");
+  hamElement.classList.toggle("toggle")
+  closeBtn.classList.toggle("close")
+})
 
 
 hamElement.addEventListener("click", function () {
     menuElement.classList.toggle("active");
+
+    hamElement.classList.toggle("toggle");
+    closeBtn.classList.toggle("close")
 
     shopElement.classList.toggle("font1");
     storyElement.classList.toggle("font2");
@@ -22,7 +32,8 @@ document.addEventListener('click', e => {
     storyElement.classList.add("font2");
     contactElement.classList.add("font3");
     loginElement.classList.add("font4");
-
+    hamElement.classList.add("toggle")
+    closeBtn.classList.add("close")
   }
 })
 

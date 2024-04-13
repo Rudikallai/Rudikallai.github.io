@@ -29,8 +29,8 @@ body {
 
 #topBtn {
     z-index: 1010;
-    background-color: #929595;
-    color: #3d3b3b;
+    background-color: #ffffff;
+    color: #000000;
     grid-column-start: 1;
     grid-column-end: 2;
     position: fixed;
@@ -47,8 +47,8 @@ body {
 }
 
 #topBtn:hover {
-    background-color: #343333;
-    color: #ddd;
+    background-color: #000000;
+    color: #ffffff;
     transition: 0.2s ease;
 }
 
@@ -83,9 +83,15 @@ header {
     color: white;
     font-size: 150%;
     text-transform: uppercase;
+    display: none;
 }
 
-.hambi-active {
+.toggle {
+    display: block;
+    
+}
+
+.closeBtn {
     background-color: black;
     padding: 0%;
     margin-right: 5%;
@@ -95,10 +101,16 @@ header {
     flex-direction: column;
     color: white;
     font-size: 150%;
-    font-weight: 700;
     text-transform: uppercase;
+    display: block;
+    transition: 0.1s ease;
+}
+
+.close {
+    transform: scale(0);
     display: none;
 }
+
 
 
 #logo {
