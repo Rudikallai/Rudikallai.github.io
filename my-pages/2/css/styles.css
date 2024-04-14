@@ -9,13 +9,15 @@ html {
     /*"Playfair Display", serif*/
     /*'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
     /*"Oswald", sans-serif*/
-    font-family: 'Poppins' sans-serif;
+    font-family: "Comfortaa", sans-serif;
+    font-style: normal;
+    font-weight: 200;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: rgb(0, 0, 0);
-    background-image: url("../img/background1.jpeg");
+    background-image: url("../img/back44.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -57,6 +59,7 @@ img {
 }
 
 header {
+    height: 16%;
     background-color: black;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -117,6 +120,7 @@ header {
     color: #ddd;
     padding: 3%;
     right: 100%;
+    justify-content:first baseline;
 }
 
 #logo h1 {
@@ -130,8 +134,7 @@ header {
 }
 
 #logo img {
-    width: 15%;
-    margin-left: 5%;
+    width: 17%;
     margin-right: 2%;
 }
 
@@ -139,7 +142,7 @@ header {
     grid-column-start: 1;
     grid-column-end: 13;
     grid-row: span 1;
-    background-color: rgb(163, 163, 163);
+    background-color: rgb(172, 171, 170);
     height: 25%;
     width: 100%;
     padding: 2%;
@@ -151,6 +154,8 @@ header {
     z-index: 1003;
     transition: 0.3s;
     text-transform: uppercase;
+    border-radius: 8px;
+    border: 1px solid black;
 }
 
 .active {
@@ -282,7 +287,7 @@ header {
 #content3 {
     grid-column-start: 7;
     grid-column-end: 13;
-    margin-top: 20%;
+    margin-top: 15%;
 }
 
 #content3 img {
@@ -291,7 +296,7 @@ header {
     border-radius: 5px;
     box-shadow: 0 1px 5px #343333;
     position: sticky;
-    top: 20%;
+    top: 22%;
 }
 
 #content4 {
@@ -485,7 +490,7 @@ footer {
     margin-bottom: 2.5%;
     grid-column-end: 12;
     grid-column-start: 2;
-    background-color: #2e2f30
+    background-color: #6f6f6f;
         /*#3f4c55*/
     ;
     border-radius: 8px;
@@ -507,7 +512,7 @@ footer {
 }
 
 .models-content:hover {
-    background-color: #6f6f6f;
+    background-color: #2e2f30;
     box-shadow: 0 3px 5px #ffffff;
 }
 
@@ -546,7 +551,7 @@ footer {
 
 body#models-body {
     background-color: rgb(0, 0, 0);
-    background-image: url("../img/shop-back.jpeg");
+    background-image: url("../img/back44.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
