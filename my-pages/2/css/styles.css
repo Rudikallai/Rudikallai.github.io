@@ -972,3 +972,71 @@ body#models-body {
         transition: 0s ease;
     }
 }
+
+
+
+
+
+
+
+
+#nav-918 {
+    margin-top: 100%;
+}
+
+
+.carousel-container {
+    width: 120%;
+    top: 90%;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    position: relative;
+    margin: 0 auto;
+    z-index: 5;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    bottom: 65%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 250%;
+    font-style: italic;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
