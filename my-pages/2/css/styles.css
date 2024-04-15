@@ -16,8 +16,8 @@ html {
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    background-image: url("../img/back44.jpeg");
+    background-color: #000;
+    background-image: url("../img/wallpaper7.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -281,7 +281,7 @@ header {
 #content2 p {
     padding: 7%;
     font-size: 1.4rem;
-    color: #000000;
+    color: rgb(0, 0, 0);
 }
 
 #content3 {
@@ -551,21 +551,21 @@ footer {
 
 body#models-body {
     background-color: rgb(0, 0, 0);
-    background-image: url("../img/back44.jpeg");
+    background-image: url("../img/wallpaper2.jpeg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, minmax(30px, auto));
+    grid-template-rows: repeat(6, minmax(30px, auto));
     grid-gap: 0px;
 }
 
 #models-footer {
-    margin-top: 25%;
+    margin-top: 20%;
     bottom: 0;
-    grid-row: 10;
+    grid-row: 8;
     grid-column: span 13;
     grid-row: span 5;
     background-color: black;
@@ -994,8 +994,13 @@ body#models-body {
     margin-top: 22%;
 }
 
+#models-intro h2, h3 {
+    color: white;
+}
+
 #models-intro p {
     padding: 5%;
+    color: white;
 }
 
 #models-slide {
@@ -1024,6 +1029,7 @@ body#models-body {
 .slide img {
     width: 100%;
     height: auto;
+    animation:forwards 0.4s ease;
 }
 
 .slide img:hover {
@@ -1035,11 +1041,11 @@ body#models-body {
     position: absolute;
     top: 10%;
     left: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 200%;
     font-style: italic;
     font-weight: 500;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(255, 255, 255);
     
 }
 
@@ -1049,7 +1055,7 @@ body#models-body {
     position: absolute;
     top: 114%;
     left: 10%;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 20px;
     display: flex;
     justify-content: space-between;
@@ -1070,7 +1076,7 @@ body#models-body {
     font-weight: 10;
     position: absolute;
     transform: translateY(-50%);
-    color: rgb(0, 0, 0);
+    color: rgb(218, 204, 204);
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -1087,7 +1093,7 @@ body#models-body {
 }
 
 .prev:hover {
-    color: #4c4f4f;
+    color: #b36637;
     transition: 0.2s ease;
 }
 
