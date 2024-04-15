@@ -14,19 +14,19 @@ closeBtn.addEventListener("click", function () {
 
 
 hamElement.addEventListener("click", function () {
-    menuElement.classList.toggle("active");
+  menuElement.classList.toggle("active");
 
-    hamElement.classList.toggle("toggle");
-    closeBtn.classList.toggle("close")
+  hamElement.classList.toggle("toggle");
+  closeBtn.classList.toggle("close")
 
-    shopElement.classList.toggle("font1");
-    storyElement.classList.toggle("font2");
-    contactElement.classList.toggle("font3");
-    loginElement.classList.toggle("font4");
+  shopElement.classList.toggle("font1");
+  storyElement.classList.toggle("font2");
+  contactElement.classList.toggle("font3");
+  loginElement.classList.toggle("font4");
 });
 
 document.addEventListener('click', e => {
-  if(!menuElement.contains(e.target) && e.target !== hamElement) {
+  if (!menuElement.contains(e.target) && e.target !== hamElement) {
     menuElement.classList.add("active");
     shopElement.classList.add("font1");
     storyElement.classList.add("font2");
@@ -40,7 +40,7 @@ document.addEventListener('click', e => {
 
 let mybutton = document.getElementById("topBtn");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
@@ -57,8 +57,11 @@ function topFunction() {
 
 
 
-
 let slideIndex = 0;
+const slides = document.querySelectorAll('.carousel .slide');
+const text1 = document.querySelector('.carousel-text1');
+const text2 = document.querySelector('.carousel-text2');
+
 showSlide(slideIndex);
 
 function prevSlide() {
@@ -70,14 +73,6 @@ function nextSlide() {
 }
 
 function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel img');
-    const texts = [
-        "The 918 Spyder",
-        "The GT3 RS",
-        "The 911 Turbo S"
-    ];
-    const carouselText = document.querySelector('.carousel-text p');
-
     if (index >= slides.length) {
         slideIndex = 0;
     } else if (index < 0) {
@@ -89,5 +84,33 @@ function showSlide(index) {
     }
 
     slides[slideIndex].style.display = 'block';
-    carouselText.textContent = texts[slideIndex];
+    updateText();
+}
+
+function updateText() {
+    // For demonstration, you can customize these texts dynamically
+    switch (slideIndex) {
+        case 0:
+            text1.textContent = "The 992 GT3 RS";
+            text2.innerHTML = `<p>0-60 mph in 3.0 seconds</p>
+                               <p>190 mph top speed</p>
+                               <p>525 hp (518 bhp) 8,500 - 9,000 rpm</p>
+                               <p>4.0-litre flat-six engine</p>`;
+            break;
+        case 1:
+            text1.textContent = "The 911 Turbo S";
+            text2.innerHTML = `<p>0-60 mph in 2.6 seconds</p>
+                               <p>205 mph top speed</p>
+                               <p>640 hp, 590 lb-ft of torque</p>
+                               <p>Twin-turbo 3.7-liter flat-six engine</p>`;
+            break;
+        case 2:
+            text1.textContent = "The 718 Cayman GT4 RS";
+            text2.innerHTML = `<p>0-60 mph in 3.3 seconds</p>
+                               <p>188 mph top speed</p>
+                               <p>414 hp, 309 lb-ft of torque</p>
+                               <p>4.0-litre six-cylinder naturally aspirated engine</p>`;
+            break;
+        // Add more cases if needed for additional slides
+    }
 }
