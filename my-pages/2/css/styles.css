@@ -1039,6 +1039,7 @@ body#models-body {
     font-size: 200%;
     font-style: italic;
     font-weight: 500;
+    border-bottom: 2px solid black;
     
 }
 
@@ -1046,8 +1047,8 @@ body#models-body {
     grid-column-start: 2;
     grid-column-end: 12;
     position: absolute;
-    top: 168%;
-    left: 17%;
+    top: 114%;
+    left: 10%;
     color: rgb(0, 0, 0);
     font-size: 20px;
     display: flex;
