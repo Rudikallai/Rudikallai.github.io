@@ -238,6 +238,8 @@ header {
 }
 
 #content1 h5 {
+    width: 48%;
+    font-style: italic;
     position: absolute;
     z-index: 999;
     top: 80%;
@@ -998,6 +1000,37 @@ body#models-body {
         transition: 0s ease;
     }
 
+    .prev, .next {
+        font-size: 400%;
+        font-weight: 10;
+        position: absolute;
+        transform: translateY(-50%);
+        color: rgb(218, 204, 204);
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        top: 150%;
+        margin: 0;
+    }
+    
+    .prev {
+        right: 50%;
+    }
+    
+    .next {
+        left: 91%;
+    }
+    
+    .prev:hover {
+        color: rgb(82, 79, 79);
+        transition: 0.2s ease-in;
+    }
+    
+    .next:hover {
+        color: rgb(103, 94, 94);
+        transition: 0.2s ease;
+    }
+
 }
 
 
@@ -1028,14 +1061,18 @@ body#models-body {
 }
 
 #models-slide {
+
+
     grid-column: span 12;
 }
 
 .carousel-container {
+    margin-bottom: 5%;
+    border-radius: 8px;
     top: 20%;
     width: 100%;
-    grid-column-start: 2;
-    grid-column-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 13;
     position: relative;
     margin: 0 auto;
     overflow: hidden;
@@ -1048,23 +1085,27 @@ body#models-body {
 
 .slide {
     flex: 0 0 100%;
+    margin-left: 10%;
 }
 
 .slide img {
-    width: 100%;
+    top: 0;
+    width: 80%;
     height: auto;
     animation:forwards 0.4s ease;
 }
 
-.slide img:hover {
+/*.slide img:hover {
     transform: scale(1.02);
-    transition: 0.2s ease;
-}
+    transition: 0.4s ease;
+}*/
 
 .carousel-text1 {
+    grid-column-start: 1;
+    grid-column-end: 13;
     position: absolute;
-    top: 10%;
-    left: 20px;
+    top: 110%;
+    left: 15%;
     color: rgb(255, 255, 255);
     font-size: 200%;
     font-style: italic;
@@ -1104,28 +1145,24 @@ body#models-body {
     border: none;
     cursor: pointer;
     padding: 10px;
-    top: 150%;
+    top: 180%;
     margin: 0;
 }
 
 .prev {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    right: 94%;
+    right: 52%;
 }
 
 .next {
-    grid-column-start: 12;
-    grid-column-end: 13;
-    left: 94%;
+    left: 52%;
 }
 
 .prev:hover {
-    color: black;
+    color: rgb(82, 79, 79);
     transition: 0.2s ease-in;
 }
 
 .next:hover {
-    color: black;
+    color: rgb(103, 94, 94);
     transition: 0.2s ease;
 }
