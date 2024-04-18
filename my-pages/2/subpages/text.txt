@@ -1,0 +1,161 @@
+<nav id="models-intro">
+        <h2>bwivbwidbvwdb</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci mollitia cumque id magnam iste ipsam. Illo
+            animi ad magnam exercitationem obcaecati illum rem laboriosam fugiat similique alias sit, iure autem!
+            Non iste eaque suscipit architecto. Repellat, minima? Ut vel, quos perspiciatis delectus odit reprehenderit
+            ullam earum labore at sapiente eaque explicabo quo deleniti porro, expedita voluptatem illo, provident
+            aliquam sit!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci mollitia cumque id magnam iste ipsam. Illo
+            animi ad magnam exercitationem obcaecati illum rem laboriosam fugiat similique alias sit, iure autem!
+            Non iste eaque suscipit architecto. Repellat, minima? Ut vel, quos perspiciatis delectus odit reprehenderit
+            ullam earum labore at sapiente eaque explicabo quo deleniti porro, expedita voluptatem illo, provident
+            aliquam sit!
+        </p>
+    </nav>
+   
+
+
+
+
+    <!--<div class="carousel-container">
+
+        <div class="carousel">
+
+            <div class="slide">
+                <img src="../img/gt3-rs.png" alt="Slide 2">
+            </div>
+
+            <div class="slide">
+                <img src="../img/cayman.png" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="../img/911-turbo.png" alt="Slide 3">
+            </div>
+            
+        </div>
+       
+        
+        
+    </div>
+    <div class="carousel-text1">Text 1 for Slide 1</div>
+
+    
+    <a class="prev" onclick="prevSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>-->
+
+
+    <!--<div class="carousel-text2">
+        <p>Description for Slide 1</p>
+        <p>Description for Slide 1</p>
+        <p>Description for Slide 1</p>
+        <p>Description for Slide 1</p>
+    </div>-->
+
+
+.carousel-container {
+    border-radius: 8px;
+    top: 110%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    height: auto;
+}
+
+.carousel {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 100%;
+    margin-left: 10%;
+}
+
+.slide img {
+    top: 0;
+    width: 80%;
+    height: auto;
+    animation:forwards 0.4s ease;
+}
+
+/*.slide img:hover {
+    transform: scale(1.02);
+    transition: 0.4s ease;
+}*/
+
+.carousel-text1 {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    position: absolute;
+    top: 100%;
+    left: 15%;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    font-style: italic;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    
+}
+
+.carousel-text2 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    position: absolute;
+    top: 114%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.carousel-text2 p {
+    padding: 5%;
+}
+
+.carousel-text2 h2,
+.carousel-text2 p {
+    margin: 0;
+}
+
+.prev, .next {
+    font-size: 500%;
+    font-weight: 10;
+    position: absolute;
+    transform: translateY(-50%);
+    color: rgb(218, 204, 204);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    top: 160%;
+    margin: 0;
+}
+
+.prev {
+    right: 52%;
+}
+
+.next {
+    left: 52%;
+}
+
+.prev:hover {
+    color: rgb(82, 79, 79);
+    transition: 0.2s ease-in;
+}
+
+.next:hover {
+    color: rgb(103, 94, 94);
+    transition: 0.2s ease;
+}
+
+#models-footer {
+    margin-top: 0;
+}
+
+
+
