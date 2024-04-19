@@ -16,8 +16,7 @@ html {
 }
 
 .index-body {
-    background-color: #000;
-    background-image: url("../img/wallpaper2.jpeg");
+    background-color: #443f3f;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,14 +59,13 @@ img {
 
 header {
     height: 16%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     grid-column-start: 1;
     grid-column-end: 13;
     width: 100%;
     z-index: 1004;
     position: fixed;
     top: 0;
-    box-shadow: 0 0.5px 5px #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -155,7 +153,7 @@ header {
     transition: 0.3s;
     text-transform: uppercase;
     border-radius: 8px;
-    border: 1px solid black;
+
 }
 
 .active {
@@ -203,10 +201,11 @@ header {
 #login,
 #story,
 #contact {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 130%;
     font-weight: 400;
     margin-top: 6.5%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
 }
 
 #shop:hover,
@@ -214,9 +213,9 @@ header {
 #story:hover,
 #contact:hover {
     /*color: #995c2a;*/
-    border-bottom: 2px solid #87381e;
+    border-bottom: 2px solid #000000;
     transition: all 0.2s ease;
-    color: #87381e;
+    color: #000000;
 }
 
 #content1 {
@@ -517,17 +516,18 @@ footer {
 }
 
 #models-content4-text p {
-    width: 120%;
+    width: 110%;
     margin: 17%;
     padding: 5%;
     font-size: 1.4rem;
     color: #ddd;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 
-#infos-models {
+#infos-models-left {
     top: 0;
     left: 0;
-    right: 0;
+    margin-right: 120%;
 }
 
 #models-content4-text p:hover {
@@ -535,17 +535,10 @@ footer {
     transition: all 0.2s ease;
     font-style: italic;
     border-bottom: 1px solid black;
+    transform: scale(1.05);
 }
 
-.right {
-    font-size: 2.5rem;
-    z-index: 15;
-    position: absolute;
-    top: 10%;
-    left: 60%;
-    color: white;
-    border-bottom: 2px solid white;
-}
+
 
 #models-flex-content4 {
     display: flex;
@@ -554,12 +547,19 @@ footer {
     align-items: center;
 }
 
+#models-flex-content4 h2 {
+    font-style: italic;
+    font-weight: 400;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
 #models-content4-img {
-    width: 70%;
+    width: 72%;
+    padding-left: 2%;
 }
 
 #models-body {
-    background-color: rgb(58, 55, 55);
+    background-color: rgb(101, 95, 95);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, minmax(30px, auto));
@@ -879,7 +879,7 @@ footer {
         background-color: rgb(79, 76, 76);
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, minmax(30px, auto));
+        grid-template-rows: repeat(10, minmax(30px, auto));
         grid-gap: 0px;
     }
 
@@ -911,10 +911,7 @@ footer {
         top: 110%;
     }
 
-    #models-content1 {
-        top: 42%;
-        text-align: center;
-    }
+   
 
     #models-content1 h5 {
         font-size: 175%;
@@ -947,10 +944,6 @@ footer {
         top: 3%;
         left: 5%;
         font-size: 180%;
-    }
-
-    #models-content {
-        height: 600px;
     }
 
     #content7 {
@@ -1026,6 +1019,50 @@ footer {
     .font4 {
         visibility: collapse;
         transition: 0s ease;
+    }
+
+    #models-content {
+        grid-column: span 12;
+    }
+
+    #models-content4-text p {
+        width: 60%;
+        padding: 0;
+        font-size: 100%;
+        left: 0;
+    }
+
+    #models-content4-text p:hover {
+        
+    }
+
+    #models-flex-content4 {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    #models-content4-img img {
+        margin: 0 auto;
+        width: 140%;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .infos-models {
+        margin-top: 0%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items:  center;
+        left: 0;
+        margin-right: 0%;
+    }
+
+    #models-footer {
+        margin-top: 40%;
+        bottom: 0;
     }
 
 }
