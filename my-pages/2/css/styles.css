@@ -214,8 +214,9 @@ header {
 #story:hover,
 #contact:hover {
     /*color: #995c2a;*/
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #87381e;
     transition: all 0.2s ease;
+    color: #87381e;
 }
 
 #content1 {
@@ -488,14 +489,16 @@ footer {
 }
 
 .models-content {
+    height: 500px;
     top: 45%;
-    margin-bottom: 10.5%;
+    margin-bottom: 10%;
     grid-column-end: 12;
     grid-column-start: 2;
     background-color: rgba(0, 0, 0, 0);
     z-index: 0;
     position: relative;
     border-bottom: 1px solid white;
+    width: 97%;
 }
 
 /*.models-content:hover {
@@ -515,14 +518,23 @@ footer {
 
 #models-content4-text p {
     width: 120%;
-    padding: 10%;
+    margin: 17%;
+    padding: 5%;
     font-size: 1.4rem;
     color: #ddd;
 }
 
+#infos-models {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 #models-content4-text p:hover {
-    color: #000;
-    transition: 0.2s ease;
+    color: #000000;
+    transition: all 0.2s ease;
+    font-style: italic;
+    border-bottom: 1px solid black;
 }
 
 .right {
@@ -547,7 +559,7 @@ footer {
 }
 
 #models-body {
-    background-color: rgb(71, 67, 67);
+    background-color: rgb(58, 55, 55);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, minmax(30px, auto));
@@ -918,7 +930,7 @@ footer {
         padding: 3% 2% 10% 2%;
         margin-left: 50px;
         font-size: 130%;
-        width: 85%;
+        width: 100%;
     }
 
     #models-content4-img {
@@ -935,6 +947,10 @@ footer {
         top: 3%;
         left: 5%;
         font-size: 180%;
+    }
+
+    #models-content {
+        height: 600px;
     }
 
     #content7 {
