@@ -769,7 +769,7 @@ footer {
     #content1 {
         grid-column: span 12;
         font-size: 70%;
-        top: 23%;
+        top: 65%;
     }
 
     #content1 video {
@@ -951,19 +951,19 @@ footer {
     }
 
     #logo h1 {
-        font-size: 150%;
+        font-size: 100%;
     }
 
     #logo {
-        margin-left: 2%;
+        margin-left: 0%;
     }
 
     .hambi {
-        font-size: 100%;
+        font-size: 80%;
     }
 
     .closeBtn {
-        font-size: 100%;
+        font-size: 80%;
     }
 
     .menu {
@@ -1026,17 +1026,19 @@ footer {
     }
 
     #models-content4-text p {
-        width: 60%;
+        width: 100%;
         padding: 0;
-        font-size: 100%;
-        left: 0;
+        font-size: 90%;
     }
 
-    #models-content4-text p:hover {
-        
+    #models-content4-img h2 {
+        font-size: 150%;
     }
 
     #models-flex-content4 {
+        display: flex;
+        justify-content: center;
+        align-items: left;
         padding: 0;
         margin: 0;
         flex-direction: column;
@@ -1044,25 +1046,25 @@ footer {
 
     #models-content4-img img {
         margin: 0 auto;
-        width: 140%;
+        width: 150%;
         padding: 0;
         margin-bottom: 0;
+        margin-right: 5%;
     }
 
     .infos-models {
         margin-top: 0%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: left;
         align-items:  center;
         left: 0;
-        margin-right: 0%;
+        margin-left: 5%;
         text-align: center;
     }
 
     #models-footer {
-        margin-top: 40%;
+        margin-top: 60%;
         bottom: 0;
     }
 
