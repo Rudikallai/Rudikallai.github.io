@@ -1054,10 +1054,11 @@ footer {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items:  center;
         left: 0;
         margin-right: 0%;
+        text-align: center;
     }
 
     #models-footer {
