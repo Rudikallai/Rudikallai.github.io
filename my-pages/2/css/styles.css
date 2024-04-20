@@ -214,8 +214,10 @@ header {
 #contact:hover {
     /*color: #995c2a;*/
     border-bottom: 2px solid #000000;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
     color: #000000;
+    font-style: italic;
+    font-weight: 700;
 }
 
 #content1 {
@@ -729,8 +731,7 @@ footer {
 @media only screen and (max-width: 900px) {
 
     .index-body {
-        background-color: rgb(0, 0, 0);
-        background-image: url("../img/wallpaper2.jpeg");
+        background-color: rgb(98, 90, 90);
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -750,7 +751,7 @@ footer {
         grid-column-end: 2;
         position: fixed;
         top: 70%;
-        left: 91%;
+        left: 90%;
         padding-left: 3%;
         padding-right: 3%;
         padding-top: 2%;
@@ -769,7 +770,7 @@ footer {
     #content1 {
         grid-column: span 12;
         font-size: 70%;
-        top: 65%;
+        top: 42%;
     }
 
     #content1 video {
@@ -784,15 +785,18 @@ footer {
     }
 
     #content2 p {
-        font-size: 170%;
+        font-size: 110%;
         margin-left: 5%;
         margin-right: 5%;
+        text-align: center;
     }
 
     #content2 h2 {
-        margin-top: 5%;
-        font-size: 370%;
-        margin-left: 5%;
+        margin-top: 20%;
+        font-size: 170%;
+        margin-left: 0%;
+        width: 100%;
+        text-align: center;
     }
 
     #content3 {
@@ -813,9 +817,18 @@ footer {
         display: none;
     }
 
-    #content4-text h2, p {
+    #content4-text h2 {
         margin-right: 0%;
-        margin-left: 0%;
+        margin-left: 15%;
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    #content4-text p {
+        margin-right: 0%;
+        margin-left: 15%;
+        padding-top: 5%;
+        text-align: center;
     }
 
     #content5 {
@@ -823,11 +836,13 @@ footer {
     }
 
     #content5 h2 {
-        font-size: 270%;
+        font-size: 170%;
+        text-align: center;
+        margin-right: 10%;
     }
 
     #content5 p {
-        font-size: 170%;
+        font-size: 110%;
     }
 
     #content6 {
