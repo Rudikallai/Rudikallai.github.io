@@ -91,7 +91,7 @@ header {
 
 .toggle {
     display: block;
-    
+
 }
 
 .closeBtn {
@@ -120,7 +120,7 @@ header {
     color: #ddd;
     padding: 3%;
     right: 100%;
-    justify-content:first baseline;
+    justify-content: first baseline;
 }
 
 #logo h1 {
@@ -233,12 +233,17 @@ header {
     z-index: 1000;
 }
 
-#content1 video {
+#content1 #video1 {
     grid-column-start: 1;
     grid-column-end: 12;
     width: 100%;
     position: relative;
     z-index: 998;
+    display: block;
+}
+
+#video2 {
+    display: none;
 }
 
 #content1 h5 {
@@ -320,7 +325,7 @@ header {
 }
 
 #content4 p {
-    margin:5% 0% 0% 7%;
+    margin: 5% 0% 0% 7%;
     width: 70%;
     padding: 4%;
     font-size: 1.4rem;
@@ -611,7 +616,7 @@ footer {
 #models-flex-content4 h2 {
     font-style: italic;
     font-weight: 400;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #models-content4-img {
@@ -773,7 +778,11 @@ footer {
 @media only screen and (max-width: 660px) {
 
     #content1 h5 {
-        display: none;
+       width: 80%;
+       font-size: 145%;
+       margin: 0 auto;
+       text-align: center;
+       margin-left: 5%;
     }
 
     #content1 a {
@@ -800,7 +809,7 @@ footer {
         grid-template-rows: repeat(15, minmax(30px, auto));
         grid-gap: 0px;
         width: 100%;
-    } 
+    }
 
     #topBtn {
         z-index: 1010;
@@ -828,13 +837,30 @@ footer {
     }
 
     #content1 {
-        grid-column: span 12;
-        font-size: 70%;
-        top: 42%;
+        
+            top: 9%;
+            position: relative;
+            grid-column-start: 1;
+            grid-column-end: 13;
+
+            box-shadow: 0 1px 8px #ddd;
+            background-color: rgba(0, 0, 0, 0);
+            z-index: 1000;
+        
+       
     }
 
-    #content1 video {
+     #content1 #video1 {
+        display: none;
+    }
+
+    #video2 {
+        display: block;
+        grid-column-start: 1;
+        grid-column-end: 12;
         width: 100%;
+        position: relative;
+        z-index: 998;
     }
 
     #content2 {
@@ -965,12 +991,12 @@ footer {
     }
 
     .carousel-container {
-            width: 100%;
-            grid-column-start: 1;
-            grid-column-end: 13;
-            position: relative;
-            margin: 0 auto;
-            height: auto;
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 13;
+        position: relative;
+        margin: 0 auto;
+        height: auto;
     }
 
     .carousel {
@@ -986,7 +1012,7 @@ footer {
         top: 110%;
     }
 
-   
+
 
     #models-content1 h5 {
         font-size: 175%;
@@ -994,7 +1020,7 @@ footer {
     }
 
     #models-flex-content4 {
-        flex-direction:column;
+        flex-direction: column;
         align-items: self-start;
     }
 
@@ -1132,7 +1158,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: left;
-        align-items:  center;
+        align-items: center;
         left: 0;
         margin-left: 5%;
         text-align: center;
