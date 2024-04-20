@@ -30,7 +30,7 @@ html {
 
 #topBtn {
     z-index: 1010;
-    background-color: #ffffff;
+    background-color: #aea5a5;
     color: #000000;
     grid-column-start: 1;
     grid-column-end: 2;
@@ -45,6 +45,7 @@ html {
     font-size: 160%;
     border-radius: 6px;
     display: none;
+    width: 15%;
 }
 
 #topBtn:hover {
@@ -69,6 +70,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 1px 8px #ddd;
 }
 
 
@@ -537,7 +539,6 @@ footer {
     transition: all 0.2s ease;
     font-style: italic;
     border-bottom: 1px solid black;
-    transform: scale(1.05);
 }
 
 
@@ -750,16 +751,17 @@ footer {
         grid-column-start: 1;
         grid-column-end: 2;
         position: fixed;
-        top: 70%;
-        left: 90%;
+        top: 85%;
+        left: 86%;
         padding-left: 3%;
         padding-right: 3%;
         padding-top: 2%;
         padding-bottom: 2%;
         text-transform: uppercase;
-        font-size: 160%;
+        font-size: 180%;
         border-radius: 6px;
         display: none;
+        width: 15%;
     }
 
     header {
