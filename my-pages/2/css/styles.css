@@ -6,9 +6,6 @@
 }
 
 html {
-    /*"Playfair Display", serif*/
-    /*'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
-    /*"Oswald", sans-serif*/
     font-family: "Comfortaa", sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -16,7 +13,7 @@ html {
 }
 
 .index-body {
-    background-color: #443f3f;
+    background-color: #667b85;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,6 +25,12 @@ html {
     width: 100%;
 }
 
+img {
+    width: 100%;
+}
+
+
+/*TOP BUTTON*/
 #topBtn {
     z-index: 1010;
     background-color: #aea5a5;
@@ -53,11 +56,12 @@ html {
     color: #ffffff;
     transition: 0.2s ease;
 }
+/*TOP BUTTON*/
 
-img {
-    width: 100%;
-}
 
+
+
+/*HEADER*/
 header {
     height: 16%;
     background-color: rgb(0, 0, 0);
@@ -72,8 +76,6 @@ header {
     align-items: center;
     box-shadow: 0 1px 8px #ddd;
 }
-
-
 
 .hambi {
     background-color: black;
@@ -114,13 +116,13 @@ header {
     display: none;
 }
 
-
-
 #logo {
     color: #ddd;
     padding: 3%;
     right: 100%;
-    justify-content: first baseline;
+    display: flex;
+    justify-content: center;
+
 }
 
 #logo h1 {
@@ -203,7 +205,7 @@ header {
 #login,
 #story,
 #contact {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 130%;
     font-weight: 400;
     margin-top: 6.5%;
@@ -214,14 +216,16 @@ header {
 #login:hover,
 #story:hover,
 #contact:hover {
-    /*color: #995c2a;*/
     border-bottom: 2px solid #000000;
     transition: all 0.25s ease;
     color: #000000;
     font-style: italic;
-    font-weight: 700;
 }
+/*HEADER*/
 
+
+
+/*Main Page*/
 #content1 {
     top: 9%;
     position: relative;
@@ -280,17 +284,17 @@ header {
 #content2 {
     grid-column-start: 2;
     grid-column-end: 7;
-    margin-top: 27%;
+    margin-top: 21%;
 }
 
 #content2 h2 {
     font-size: 2rem;
-    padding: 7%;
+    padding: 2%;
     color: #000000;
 }
 
 #content2 p {
-    padding: 7%;
+    padding: 4%;
     font-size: 1.4rem;
     color: rgb(0, 0, 0);
 }
@@ -302,12 +306,13 @@ header {
 }
 
 #content3 img {
+    margin-left: 10%;
     margin-top: 5%;
     width: 75%;
     border-radius: 5px;
     box-shadow: 0 1px 5px #343333;
     position: sticky;
-    top: 22%;
+    top: 28%;
 }
 
 #content4 {
@@ -466,6 +471,7 @@ footer {
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
+/*Main Page*/
 
 
 
@@ -528,6 +534,8 @@ footer {
 }*/
 
 
+
+/*MODELS PAGE*/
 #models {
     grid-column-start: 2;
     grid-column-end: 12;
@@ -625,7 +633,7 @@ footer {
 }
 
 #models-body {
-    background-color: rgb(101, 95, 95);
+    background-color: #3b515b;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, minmax(30px, auto));
@@ -668,10 +676,6 @@ footer {
 
 #one p {
     color: white;
-}
-
-#nav-918 {
-    top: 35%;
 }
 
 #back-to-models {
@@ -772,7 +776,29 @@ footer {
     transition: 0.2s ease;
     color: #000;
 }
+/*MODELS PAGE*/
 
+
+/*OUR STORY*/
+#story1 {
+    grid-column: span 12;
+    top: 25%;
+    margin-top: 15%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#story1 h2 {
+    color: white;
+}
+
+#story1 p {
+    color: white;
+    padding: 5%;
+}
 
 
 @media only screen and (max-width: 660px) {
@@ -799,7 +825,7 @@ footer {
 @media only screen and (max-width: 900px) {
 
     .index-body {
-        background-color: rgb(98, 90, 90);
+        background-color: #7b8794;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -908,9 +934,11 @@ footer {
         margin-left: 0%;
         padding-top: 5%;
         text-align: center;
+        font-size: 170%;
     }
 
     #content4-text p {
+        font-size: 110%;
         margin-right: 0%;
         margin-left: 15%;
         padding-top: 5%;
@@ -977,7 +1005,7 @@ footer {
     }
 
     #models-body {
-        background-color: rgb(79, 76, 76);
+        background-color: #52606d;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(10, minmax(30px, auto));
