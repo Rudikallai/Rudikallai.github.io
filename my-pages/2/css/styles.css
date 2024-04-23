@@ -820,13 +820,18 @@ footer {
 }
 
 .story2 img {
-    width: 150%;
+    margin-top: 0%;
+    width: 100%;
 }
 
 .story4 {
     margin-top: 30%;
     grid-column-start: 1;
     grid-column-end: 5;
+}
+
+.story4 img {
+    margin-top: 35%;
 }
 
 .story5 {
@@ -848,7 +853,7 @@ footer {
 }
 
 .story-footer {
-    margin-top: 10%;
+    margin-top: 0%;
     bottom: 0;
     grid-row: 8;
     grid-column: span 13;
