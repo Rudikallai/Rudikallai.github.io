@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ferrari SF90 Spyder | Dynamic Autosport</title>
+    <title>Lamborghini Revuelto | Dynamic Autosport</title>
     <link rel="shortcut icon" type="image/jpg" href="../favicon_io/apple-touch-icon.png" />
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet"
@@ -15,7 +15,7 @@
     <script src="../js/index.js" defer></script>
 </head>
 
-<body id="models-body">
+<body id="mbody">
 
     <a onclick="topfunction()" href="#" id="topBtn">↑</a>
 
@@ -28,6 +28,8 @@
             </a>
         </div>
 
+        <a id="back-to-m" href="../subpages/models.html">Back to models</a>
+
         <a href="#stay" class="hambi toggle models-menu">
             menu
         </a>
@@ -39,169 +41,84 @@
     </header>
 
     <nav class="menu active">
-        <a id="story" class="font2" href="our-story.html">about us</a>
-        <a id="shop" class="font1" href="models.html">models</a>
-        <a id="contact" class="font3" href="contact.html">contact us</a>
-        <a id="login" class="font4" href="login.html">login / register</a>
+        <a id="story" class="font2" href="../subpages/our-story.html">about us</a>
+        <a id="shop" class="font1" href="../subpages/models.html">models</a>
+        <a id="contact" class="font3" href="../subpages/contact.html">contact us</a>
+        <a id="login" class="font4" href="../subpages/login.html">login / register</a>
     </nav>
 
 
 
-    <!--<div class="filters">
-        <a href="#">All Cars</a>
-        <a href="#"><img src="../img/ferrari-logo.png" alt=""></a>
-        <a href="#"><img src="../img/lambo-logo.png" alt=""></a>
-        <a href="#"><img src="../img/porsche-logo.png" alt=""></a>
-        <a href="#"><img src="../img/merc-logo.png" alt=""></a>
+    <nav id="revuelto1">
+        <video id="video1" autoplay loop muted playsinline src="../img/revuelto.mp4"></video>
+        <video id="video2" autoplay loop muted playsinline src="../img/revuelto2.mp4"></video>
+        <h5>The Lamborghini Revuelto</h5>
+    </nav>
+
+    <div id="rev2">
+        <h2>Overview</h2>
+        <p>Just before the 60th anniversary of the marque, Lamborghini unveiled Revuelto, the first HPEV (High
+            Performance Electrified Vehicle) hybrid super sports car. With the Revuelto, Lamborghini has established a
+            new benchmark in performance, on-board technology, and driving pleasure. The ultimate thrill provided by the
+            Revuelto is reached thanks to a powertrain that delivers 1015 CV total, combining the power of a brand-new
+            12-cylinder internal combustion engine with three high-density electric motors and a groundbreaking
+            transversal dual clutch e-gearbox. The power of hybridization is harnessed to take performance and driving
+            emotions to an unprecedented level.</p>
     </div>
 
-    <div id="filter"><a href="#"><img src="../img/filter.png" alt="filters"><h3>Filters</h3></a></div>-->
+    <div id="rev3">
+        <img src="../img/revuelto.webp" alt="">
+    </div>
 
-    <div class="models-content">
-        <nav id="models-flex-content4">
-            <nav id="models-content4-img"><img src="../img/revuelto.webp" title="Lamborghini Revuelto" alt="porsche">
-                <a href="../models-subpages/revuelto.html">
-                    <h2>The Lamborghini Revuelto</h2>
-                </a>
-            </nav>
+    <div id="rev4">
+        <h3>0-100 km/h in 2.5s</h3>
+        <h3>Top Speed: 350 km/h</h3>
+        <h3>Total output: 1,001 hp</h3>
+        <h3>Displacement: 6498.5 cm³</h3>
+    </div>
 
-            <div class="infos-models">
-                <nav id="models-content4-text">
-                    <a href="../models-subpages/revuelto.html">
-                        <p>Discover</p>
-                    </a>
-                </nav>
+    <div id="rev5">
+        <h2>Overview</h2>
+        <p>Just before the 60th anniversary of the marque, Lamborghini unveiled Revuelto, the first HPEV (High
+            Performance Electrified Vehicle) hybrid super sports car. With the Revuelto, Lamborghini has established a
+            new benchmark in performance, on-board technology, and driving pleasure. The ultimate thrill provided by the
+            Revuelto is reached thanks to a powertrain that delivers 1015 CV total, combining the power of a brand-new
+            12-cylinder internal combustion engine with three high-density electric motors and a groundbreaking
+            transversal dual clutch e-gearbox. The power of hybridization is harnessed to take performance and driving
+            emotions to an unprecedented level.</p>
+    </div>
 
-                <nav id="models-content4-text">
-                    <p>Request information</p>
-                </nav>
+    <div id="carousel-models">
+        <div class="carousel-controls">
+            <button id="prev" onclick="prev()">&#10094;</button>
+        </div>
 
-                <nav id="models-content4-text">
-                    <p>Sign up for a test drive</p>
-                </nav>
-
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-item"><img src="../img/revuelto3.jpeg" alt="Image 1"></div>
+                <div class="carousel-item"><img src="../img/revuelto4.jpeg" alt="Image 2"></div>
+                <div class="carousel-item"><img src="../img/revuelto6.jpeg" alt="Image 3"></div>
+                <div class="carousel-item"><img src="../img/revuelto7.jpeg" alt="Image 1"></div>
+                <div class="carousel-item"><img src="../img/revuelto8.jpeg" alt="Image 2"></div>
+                <div class="carousel-item"><img src="../img/revuelto9.jpeg" alt="Image 3"></div>
             </div>
+        </div>
 
-        </nav>
+
+        <div class="carousel-controls">
+            <button id="next" onclick="next()">&#10095;</button>
+        </div>
     </div>
 
-    <div class="models-content">
-        <nav id="models-flex-content4">
-
-            <nav id="models-content4-img"><img src="../img/gt3-rs.png" title="Porsche 992 GT3 RS" alt="porsche">
-                <a href="../models-subpages/gt3.html"><h2>The Porsche 992 GT3 RS</h2></a>
-            </nav>
-
-            
-
-            <div class="infos-models">
-                <nav id="models-content4-text">
-                    <a href="../models-subpages/gt3.html">
-                        <p>Discover</p>
-                    </a>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Request information</p>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Sign up for a test drive</p>
-                </nav>
-
-            </div>
-
-           
-
-        </nav>
+    <div id="rev6">
+        <img src="../img/logo.png" alt="">
     </div>
 
-    <div class="models-content">
-        <nav id="models-flex-content4">
-            <nav id="models-content4-img"><img src="../img/sf90.png" title="Ferrari SF90 Spyder" alt="porsche">
-                <a href="../models-subpages/sf90.html"><h2>The Ferrari SF90 Spyder</h2></a>
-            </nav>
-
-            <div class="infos-models">
-                <nav id="models-content4-text">
-                    <a href="../models-subpages/sf90.html">
-                        <p>Discover</p>
-                    </a>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Request information</p>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Sign up for a test drive</p>
-                </nav>
-
-            </div>
-
-        </nav>
-    </div>
-
-    <div class="models-content">
-        <nav id="models-flex-content4">
-
-            <nav id="models-content4-img"><img src="../img/911-turbo.png" title="Porsche 911 Turbo S" alt="porsche">
-                <a href="../models-subpages/turbos.html"><h2>The Porsche 911 Turbo S</h2></a>
-            </nav>
-            
-
-            <div class="infos-models">
-                <nav id="models-content4-text">
-                    <a href="../models-subpages/turbos.html">
-                        <p>Discover</p>
-                    </a>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Request information</p>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Sign up for a test drive</p>
-                </nav>
-
-            </div>
-
-           
-        </nav>
-    </div>
-
-    <div class="models-content">
-        <nav id="models-flex-content4">
-            <nav id="models-content4-img"><img src="../img/amg-gt.webp" title="Mercedes Benz AMG GT Black Series" alt="porsche">
-                <a href="../models-subpages/amggt.html"><h2>The Mercedes Benz AMG GT Black Series</h2></a>
-            </nav>
-
-            <div class="infos-models">
-                <nav id="models-content4-text">
-                    <a href="../models-subpages/amggt.html">
-                        <p>Discover</p>
-                    </a>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Request information</p>
-                </nav>
-
-                <nav id="models-content4-text">
-                    <p>Sign up for a test drive</p>
-                </nav>
-
-            </div>
-
-        </nav>
-    </div>
-
-   
 
 
 
-    <footer id="models-footer">
+
+    <footer id="rev-footer">
         <nav id="one">
             <p>&copy; 2024 Revive & Ride | All rights reserved</p>
         </nav>
