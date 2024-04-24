@@ -13,7 +13,7 @@ html {
 }
 
 .index-body {
-    background-color: #000000;
+    background-color: #05141a;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -251,14 +251,14 @@ header {
 }
 
 #content1 h5 {
-    width: 48%;
+    width: 64%;
     font-style: italic;
     position: absolute;
     z-index: 999;
     top: 80%;
     left: 4%;
     color: white;
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 500;
     border-bottom: 2px solid white;
 }
@@ -285,24 +285,36 @@ header {
     grid-column-start: 5;
     grid-column-end: 12;
     margin-top: 25%;
+    text-align: left;
+}
+.index1 img {
+    width: 100%;
+    margin-left: 15%;
 }
 
 .index1 h2 {
     font-size: 2rem;
-    padding: 2%;
+    padding: 7%;
     color: #ffffff;
 }
 
 .index1 p {
-    padding: 4%;
+    padding: 7%;
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
 }
 
 .index2 {
-    margin-top: 50%;
+    margin-top: 70%;
     grid-column-start: 1;
     grid-column-end: 4;
+}
+
+.index1 img {
+    width: 65%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 55%;
 }
 
 
@@ -381,11 +393,37 @@ header {
     grid-row: span 7;
 }
 
-#content6 iframe {
+.index3 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 7%;
+    text-align: left;
+}
+
+.index3 h2 {
+    font-size: 2rem;
+    padding: 2%;
+    text-align: left;
+    color: #ffffff;
+}
+
+.index3 p {
+    padding: 4%;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.index3 iframe {
     margin: 5%;
-    width: 85%;
+    width: 100%;
     border-radius: 5px;
-    box-shadow: 0 1px 5px #252525;
+    box-shadow: 0 1px 5px #ffffff;
 }
 
 #content7 {
@@ -395,7 +433,7 @@ header {
 
 
 .index-footer {
-    margin-top: 10%;
+    margin-top: 5%;
     grid-column-start: 1;
     grid-column-end: 13;
     display: grid;
@@ -403,6 +441,7 @@ header {
     grid-template-rows: repeat(1, minmax(30px, auto));
     grid-gap: 0px;
     margin-bottom: 0%;
+    box-shadow: 0 0.5px 8px #ddd;
 }
 
 #one {
@@ -642,7 +681,8 @@ header {
 }
 
 #models-body {
-    background-color: #1e242f;
+    background-color: #05141a;
+    /*background-color: #1e242f;*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, minmax(30px, auto));
@@ -680,6 +720,7 @@ header {
     background-color: black;
     color: #ddd;
     margin-bottom: 0;
+    box-shadow: 0 0.5px 10px #ddd;
 }
 
 .models-menu {
@@ -798,7 +839,7 @@ header {
 /*OUR STORY*/
 
 .story-body {
-    background-color: #000000;
+    background-color: #05141a;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -816,6 +857,9 @@ header {
     grid-column-start: 1;
     grid-column-end: 10;
     margin-left: 10%;
+    border-radius: 8px;
+    margin-right: 5%;
+    margin-bottom: 10%;
 }
 
 .story1 h2 {
@@ -827,6 +871,12 @@ header {
     padding: 5%;
     font-size: 170%;
     width: 100%;
+}
+
+.story1 img {
+    margin-top: 5%;
+    margin-left: 40%;
+    width: 20%;
 }
 
 .story2 {
@@ -847,7 +897,8 @@ header {
 }
 
 .story4 img {
-    margin-top: 35%;
+    margin-top: 45%;
+    width: 70%;
 }
 
 .story5 {
@@ -855,6 +906,8 @@ header {
     grid-column-start: 5;
     grid-column-end: 13;
     margin-top: 30%;
+    border-radius: 8px;
+    margin-right: 10%;
 }
 
 .story5 h2 {
@@ -886,6 +939,43 @@ header {
     margin-bottom: 0;
     box-shadow: 0 0.5px 10px #ddd;
 }
+
+.contact-footer {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, minmax(30px, auto));
+    grid-gap: 0px;
+    margin-bottom: 0%;
+    margin-top: 20%;
+    bottom: 0;
+    grid-row: 8;
+    grid-column: span 13;
+    grid-row: span 5;
+    background-color: black;
+    color: #ddd;
+    margin-bottom: 0;
+}
+
+.login-footer {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(1, minmax(30px, auto));
+    grid-gap: 0px;
+    margin-bottom: 0%;
+    margin-top: 20%;
+    bottom: 0;
+    grid-row: 8;
+    grid-column: span 13;
+    grid-row: span 5;
+    background-color: black;
+    color: #ddd;
+    margin-bottom: 0;
+}
+
 
 
 @media only screen and (max-width: 660px) {
@@ -1091,7 +1181,7 @@ header {
     }
 
     #models-body {
-        background-color: #52606d;
+        background-color: #1e242f;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(10, minmax(30px, auto));
