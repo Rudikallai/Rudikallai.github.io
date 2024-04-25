@@ -13,7 +13,7 @@ html {
 }
 
 .index-body {
-    background-color: #05141a;
+    background-color: #000000;
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -284,8 +284,8 @@ header {
 }
 
 .index1 {
-    grid-column-start: 5;
-    grid-column-end: 12;
+    grid-column-start: 2;
+    grid-column-end: 7;
     margin-top: 25%;
     text-align: left;
 }
@@ -297,29 +297,83 @@ header {
 
 .index1 h2 {
     font-size: 2rem;
-    padding: 7%;
+    padding: 4%;
     color: #ffffff;
 }
 
 .index1 p {
-    padding: 7%;
+    padding: 4%;
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
 }
 
 .index2 {
-    margin-top: 70%;
+    grid-column-start: 8;
+    grid-column-end: 12;
+    margin-top: 15%;
+    text-align: left;
+}
+
+.index2 img {
+    width: 100%;
+    margin-left: 15%;
+}
+
+.index2 h2 {
+    font-size: 2rem;
+    padding: 4%;
+    color: #ffffff;
+}
+
+.index2 p {
+    padding: 4%;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+#index4 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    margin-top: 30%;
+}
+
+#index5 {
+    width: 100%;
+    margin-top: 10%;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+
+
+
+
+#index-imgs {
+    margin-top: 10%;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 12;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.index1 img {
-    width: 65%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    height: 55%;
+#imgs-1 {
+    height: 360px;
+    width: 135%;
+    clip-path: polygon(100% 0%, 71% 100%, 0% 100%, 0% 0%);
 }
 
+#imgs-2 {
+    height: 360px;
+    width: 128%;
+    clip-path: polygon(100% 0%, 75% 100%, 0% 100%, 26% 0%);
+}
+
+#imgs-3 {
+    height: 360px;
+    width: 135%;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 39% 0%);
+}
 
 
 #content3 {
@@ -685,7 +739,7 @@ header {
 }
 
 #models-body {
-    background-color: #05141a;
+    background-color: #353434;
     /*background-color: #1e242f;*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -844,7 +898,7 @@ header {
 /*OUR STORY*/
 
 .story-body {
-    background-color: #05141a;
+    background-color: #000000;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -859,11 +913,17 @@ header {
 .story1 {
     margin-top: 10%;
     color: white;
-    grid-column-start: 1;
-    grid-column-end: 10;
-    margin-left: 10%;
+    grid-column-start: 7;
+    grid-column-end: 12;
+    margin-left: 0%;
     border-radius: 8px;
     margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+.story1 img {
+    width: 20%;
+    margin: 0 auto;
     margin-bottom: 10%;
 }
 
@@ -874,20 +934,14 @@ header {
 
 .story1 p {
     padding: 5%;
-    font-size: 170%;
+    font-size: 130%;
     width: 100%;
 }
 
-.story1 img {
-    margin-top: 5%;
-    margin-left: 40%;
-    width: 20%;
-}
 
 .story2 {
-    margin-top: 10%;
-    grid-column-start: 10;
-    grid-column-end: 13;
+    grid-column-start: 1;
+    grid-column-end: 7;
 }
 
 .story2 img {
@@ -895,24 +949,48 @@ header {
     width: 100%;
 }
 
-.story4 {
-    margin-top: 30%;
-    grid-column-start: 1;
-    grid-column-end: 5;
+.parallelogram {
+    position: relative;
+    margin-top: 60%;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    width: 85%;
+    overflow: hidden;
+    margin-left: 30%;
+    transform: skewX(-25deg);
+    transform: skewY(-50deg)
 }
 
-.story4 img {
-    margin-top: 45%;
-    width: 70%;
+.parallelogram img {
+    width: 150%;
+    transform: skewX(25deg);
+    transform: skewY(50deg);
+}
+
+.parallelogram2 {
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    width: 92%;
+    overflow: hidden;
+    transform: skewX(-25deg);
+    transform: skewY(-50deg)
+}
+
+.parallelogram2 img {
+    margin-top: 37%;
+    width: 50%;
+    transform: skewX(25deg);
+    transform: skewY(50deg);
 }
 
 .story5 {
+    margin-left: 10%;
     color: white;
-    grid-column-start: 5;
-    grid-column-end: 13;
-    margin-top: 30%;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    margin-top: 40%;
     border-radius: 8px;
-    margin-right: 10%;
 }
 
 .story5 h2 {
@@ -922,7 +1000,7 @@ header {
 
 .story5 p {
     padding: 5%;
-    font-size: 170%;
+    font-size: 130%;
     width: 100%;
 }
 
@@ -1313,7 +1391,7 @@ header {
 }
 
 .carousel-container {
-    width: 100%;
+    width: 98%;
     overflow: hidden;
     position: relative;
     margin: 0 auto;
