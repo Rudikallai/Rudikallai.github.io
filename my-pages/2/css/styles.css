@@ -899,13 +899,9 @@ header {
 
 .story-body {
     background-color: #000000;
-    background-attachment: fixed;
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(7, minmax(30px, auto));
+    grid-template-rows: repeat(2, minmax(100px, auto));
     grid-gap: 0px;
     width: 100%;
 }
@@ -916,7 +912,6 @@ header {
     grid-column-start: 7;
     grid-column-end: 12;
     margin-left: 10%;
-    border-radius: 8px;
     margin-right: 5%;
     margin-bottom: 10%;
 }
@@ -940,23 +935,48 @@ header {
 
 
 .story2 {
-    grid-column-start: 1;
+    margin-left: 2%;
+    grid-column-start: 2;
     grid-column-end: 7;
 }
 
-.story2 img {
-    margin-top: 0%;
+.story2 h2 {
+    color: white;
+    font-size: 270%;
+    padding: 5%;
+}
+
+.story2 p {
+    color: white;
+    padding: 5%;
+    font-size: 130%;
     width: 100%;
+}
+
+.story2 img {
+    margin-left: 35%;
+    margin-top: 2%;
+    width: 20%;
+}
+
+.story3 {
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
+
+.story3 iframe {
+    margin-top: 10%;
+    border-radius: 8px;
 }
 
 .parallelogram {
     position: relative;
-    margin-top: 60%;
+    margin-top: 63%;
     grid-column-start: 6;
     grid-column-end: 12;
     width: 85%;
     overflow: hidden;
-    margin-left: 30%;
+    margin-left: 31%;
     transform: skewX(-25deg);
     transform: skewY(-50deg)
 }
@@ -968,11 +988,11 @@ header {
 }
 
 .parallelogram2 {
-    margin-top: 62%;
+    margin-top: 62.8%;
     position: absolute;
     grid-column-start: 1;
     grid-column-end: 8;
-    width: 46.5%;
+    width: 45%;
     overflow: hidden;
     transform: skewX(-25deg);
     transform: skewY(-50deg)
@@ -986,8 +1006,8 @@ header {
 }
 
 .parallelogram3 {
-    margin-top: 23%;
-    margin-left: 43.5%;
+    margin-top: 26%;
+    margin-left: 42.7%;
     position: absolute;
     grid-column-start: 1;
     grid-column-end: 12;
@@ -1004,7 +1024,7 @@ header {
 }
 
 .parallelogram4 {
-    margin-top: 46.75%;
+    margin-top: 49.5%;
     margin-left: 9%;
     position: absolute;
     grid-column-start: 1;
@@ -1021,6 +1041,7 @@ header {
     transform: skewX(25deg);
     transform: skewY(50deg);
 }
+
 
 .story5 {
     margin-left: 10%;
@@ -1049,15 +1070,10 @@ header {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, minmax(30px, auto));
     grid-gap: 0px;
+    margin-top: 15%;
     margin-bottom: 0%;
-    margin-top: 0%;
-    bottom: 0;
-    grid-row: 8;
-    grid-column: span 13;
-    grid-row: span 5;
     background-color: black;
     color: #ddd;
-    margin-bottom: 0;
     box-shadow: 0 0.5px 10px #ddd;
 }
 
