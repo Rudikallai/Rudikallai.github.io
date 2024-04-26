@@ -911,11 +911,11 @@ header {
 }
 
 .story1 {
-    margin-top: 10%;
+    margin-top: 5%;
     color: white;
     grid-column-start: 7;
     grid-column-end: 12;
-    margin-left: 0%;
+    margin-left: 10%;
     border-radius: 8px;
     margin-right: 5%;
     margin-bottom: 10%;
@@ -962,24 +962,62 @@ header {
 }
 
 .parallelogram img {
-    width: 150%;
+    width: 200%;
     transform: skewX(25deg);
     transform: skewY(50deg);
 }
 
 .parallelogram2 {
+    margin-top: 62%;
     position: absolute;
     grid-column-start: 1;
     grid-column-end: 8;
-    width: 92%;
+    width: 46.5%;
     overflow: hidden;
     transform: skewX(-25deg);
     transform: skewY(-50deg)
 }
 
 .parallelogram2 img {
-    margin-top: 37%;
-    width: 50%;
+    margin-top: 50%;
+    width: 100%;
+    transform: skewX(25deg);
+    transform: skewY(50deg);
+}
+
+.parallelogram3 {
+    margin-top: 23%;
+    margin-left: 43.5%;
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    width: 40%;
+    overflow: hidden;
+    transform: skewX(-25deg);
+    transform: skewY(-50deg)
+}
+
+.parallelogram3 img {
+    width: 100%;
+    transform: skewX(25deg);
+    transform: skewY(50deg);
+}
+
+.parallelogram4 {
+    margin-top: 46.75%;
+    margin-left: 9%;
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    width: 70%;
+
+    overflow: hidden;
+    transform: skewX(-25deg);
+    transform: skewY(-50deg)
+}
+
+.parallelogram4 img {
+    width: 100%;
     transform: skewX(25deg);
     transform: skewY(50deg);
 }
