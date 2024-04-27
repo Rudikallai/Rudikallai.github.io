@@ -3,7 +3,7 @@ const menuElement = document.querySelector(".menu");
 const shopElement = document.querySelector("#shop");
 const storyElement = document.querySelector("#story");
 const contactElement = document.querySelector("#contact");
-const loginElement = document.querySelector("#login");
+const loginElement = document.querySelector("#login")
 const closeBtn = document.querySelector(".closeBtn");
 
 closeBtn.addEventListener("click", function () {
@@ -22,18 +22,21 @@ hamElement.addEventListener("click", function () {
   shopElement.classList.toggle("font1");
   storyElement.classList.toggle("font2");
   contactElement.classList.toggle("font3");
-  loginElement.classList.toggle("font4");
+  loginElement.classList.toggle("font4")
+
 });
 
 document.addEventListener('click', e => {
   if (!menuElement.contains(e.target) && e.target !== hamElement) {
     menuElement.classList.add("active");
-    shopElement.classList.add("font1");
-    storyElement.classList.add("font2");
-    contactElement.classList.add("font3");
-    loginElement.classList.add("font4");
-    hamElement.classList.add("toggle")
-    closeBtn.classList.add("close")
+
+  hamElement.classList.add("toggle");
+  closeBtn.classList.add("close")
+
+  shopElement.classList.add("font1");
+  storyElement.classList.add("font2");
+  contactElement.classList.add("font3");
+  loginElement.classList.add("font4")
   }
 })
 
