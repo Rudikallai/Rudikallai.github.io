@@ -992,29 +992,31 @@ header {
     /*background-color: #1e242f;*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, minmax(30px, auto));
+    grid-template-rows: repeat(9, minmax(50px, auto));
     grid-gap: 0px;
 }
 
 .contact1 {
-    margin-top: 25%;
+    margin-top: 18%;
     grid-column-start: 2;
     grid-column-end: 12;
 }
 
 .contact1 h2 {
+    padding: 5%;
     width: 100%;
     color: white;
     font-size: 270%;
 }
 
 .contact1 p {
+    padding: 5%;
     color: white;
     font-size: 170%;
 }
 
 .contact2 {
-    margin-top: 15%;
+    margin-top: 10%;
     grid-column-start: 2;
     grid-column-end: 12;
     display: flex;
@@ -1035,47 +1037,14 @@ header {
     width: 75%;
 }
 
-.contact-img1 {
-    width: 100%;
-}
-
-.contact-img1 img {
-    width: 100%;
+.contact2 img {
     border-radius: 8px;
-}
-
-.contact-img2 {
-    margin-top: 10%;
-    grid-column-start: 2;
-    grid-column-end: 7;
-}
-
-.contact-img2 img {
-    margin-left: 10%;
-    width: 80%;
-    border-radius: 8px;
+    width: 100%;
+    padding-right: 5%;
 }
 
 .contact3 {
-    margin-top: 10%;
-    grid-column-start: 7;
-    grid-column-end: 12;
-}
-
-.contact3 h2 {
-    padding: 5%;
-    width: 100%;
-    color: white;
-    font-size: 200%;
-}
-
-.contact3 p {
-    padding: 5%;
-    color: white;
-    font-size: 130%;
-}
-
-.contact-list {
+    margin-top: 15%;
     grid-column-start: 2;
     grid-column-end: 12;
     display: flex;
@@ -1084,29 +1053,26 @@ header {
     color: white;
 }
 
-.contact-img3 {
-    margin-top: 10%;
+.contact3 h2 {
+    padding: 5%;
+    font-size: 200%;
+}
+
+.contact3 p {
+    padding: 5%;
+    font-size: 130%;
+}
+
+.contact4 {
+    margin-top: 15%;
     grid-column-start: 2;
-    grid-column-end: 7;
-}
-
-.contact-img3 img {
-    margin-left: 10%;
-    width: 80%;
-    border-radius: 8px;
-}
-
-.contact8 {
-    grid-column-start: 7;
     grid-column-end: 12;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
     color: white;
 }
 
-.contact9 {
-    grid-column-start: 2;
-    grid-column-end: 12;
-    color: white;
-}
 
 
 
@@ -1197,8 +1163,6 @@ header {
     font-size: 150%;
     font-style: italic;
     font-weight: 300;
-    border: 2px solid white;
-    border-radius: 3px;
 }
 
 #rev5 {
