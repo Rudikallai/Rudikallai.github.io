@@ -310,7 +310,7 @@ header {
 .index2 {
     grid-column-start: 2;
     grid-column-end: 12;
-    margin-top: 15%;
+    margin-top: 0%;
     text-align: left;
 }
 
@@ -329,6 +329,61 @@ header {
     padding: 4%;
     font-size: 1.4rem;
     color: rgb(255, 255, 255);
+}
+
+.index-paral {
+    position: relative;
+    margin-top: 53%;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    width: 85%;
+    overflow: hidden;
+    margin-left: 28%;
+    transform: skewX(-25deg);
+    transform: skewY(-50deg)
+}
+
+.index-paral  img {
+    width: 190%;
+    transform: skewX(25deg);
+    transform: skewY(50deg);
+}
+
+.index-paral2 {
+    margin-top: 127.3%;
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 8;
+    width: 45%;
+    overflow: hidden;
+    transform: skewX(-25deg);
+    transform: skewY(-50deg)
+}
+
+.index-paral2 img {
+    margin-top: 50%;
+    width: 110%;
+    transform: skewX(25deg);
+    transform: skewY(50deg);
+}
+
+.index-paral3 {
+    margin-top: 140.7%;
+    margin-left: 21%;
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    width: 70%;
+
+    overflow: hidden;
+    transform: skewX(-25deg);
+    transform: skewY(-50deg)
+}
+
+.index-paral3 img {
+    width: 110%;
+    transform: skewX(25deg);
+    transform: skewY(50deg);
 }
 
 
@@ -428,7 +483,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    margin-top: 7%;
+    margin-top: 0%;
     text-align: left;
 }
 
@@ -632,7 +687,7 @@ header {
 }
 
 #models-content1 h5 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 3rem;
     font-weight: 300;
     padding: 5% 25.8% 5% 25.8%;
@@ -648,7 +703,7 @@ header {
     background-color: rgba(0, 0, 0, 0);
     z-index: 0;
     position: relative;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgb(255, 255, 255);
     width: 97%;
 }
 
@@ -663,8 +718,8 @@ header {
     position: absolute;
     top: 10%;
     left: 3%;
-    color: white;
-    border-bottom: 2px solid white;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 #models-content4-text p {
@@ -672,8 +727,8 @@ header {
     margin: 17%;
     padding: 5%;
     font-size: 1.4rem;
-    color: #ddd;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 #infos-models-left {
@@ -710,7 +765,7 @@ header {
 }
 
 #models-body {
-    background-color: #353434;
+    background-color: #000000;
     /*background-color: #1e242f;*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -879,7 +934,7 @@ header {
 
 .story1 {
     margin-top: 5%;
-    color: white;
+    color: rgb(255, 255, 255);
     grid-column-start: 7;
     grid-column-end: 12;
     margin-left: 10%;
@@ -912,13 +967,13 @@ header {
 }
 
 .story2 h2 {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 270%;
     padding: 5%;
 }
 
 .story2 p {
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 5%;
     font-size: 130%;
     width: 100%;
@@ -1016,7 +1071,7 @@ header {
 
 .story5 {
     margin-left: 10%;
-    color: white;
+    color: rgb(255, 255, 255);
     grid-column-start: 1;
     grid-column-end: 6;
     margin-top: 40%;
