@@ -81,3 +81,25 @@ const carousel = document.querySelector('.carousel');
     currentIndex = (currentIndex - 1 + totalItems) % totalItems;
     moveToIndex(currentIndex);
   }
+
+
+
+
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const images = [
+      "roma4.jpeg",
+      "roma3.jpeg",
+      "roma.jpeg",
+      // Add more image paths here as needed
+    ];
+
+    function getRandomImage() {
+      const randomIndex = Math.floor(Math.random() * images.length);
+      return images[randomIndex];
+    }
+
+    const randomImageElement = document.getElementById('random-image');
+    randomImageElement.src = getRandomImage();
+  });
