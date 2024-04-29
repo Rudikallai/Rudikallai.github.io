@@ -20,7 +20,7 @@ html {
     background-size: cover;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, minmax(30px, auto));
+    grid-template-rows: repeat(7, minmax(30px, auto));
     grid-gap: 0px;
     width: 100%;
 }
@@ -33,8 +33,8 @@ img {
 /*TOP BUTTON*/
 #topBtn {
     z-index: 1010;
-    background-color: #aea5a5;
-    color: #000000;
+    background-color: #000000;
+    color: #ffffff;
     grid-column-start: 1;
     grid-column-end: 2;
     position: fixed;
@@ -49,10 +49,11 @@ img {
     border-radius: 6px;
     display: none;
     width: 15%;
+    border: 1px solid white;
 }
 
 #topBtn:hover {
-    background-color: #000000;
+    background-color: #5a5959;
     color: #ffffff;
     transition: 0.2s ease;
     border: 1px solid white;
@@ -159,6 +160,7 @@ header {
     transition: 0.4s;
     text-transform: uppercase;
     border-radius: 5px;
+    border: 1px solid black;
 }
 
 .active {
@@ -206,7 +208,7 @@ header {
 #login,
 #story,
 #contact {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 130%;
     font-weight: 400;
     margin-top: 6.5%;
@@ -217,9 +219,9 @@ header {
 #login:hover,
 #story:hover,
 #contact:hover {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid #000000;
     transition: all 0.25s ease;
-    color: #ffffff;
+    color: #000000;
     font-style: italic;
 }
 
@@ -229,7 +231,7 @@ header {
 
 /*Main Page*/
 #content1 {
-    top: 9%;
+    top: 18%;
     position: relative;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -253,14 +255,15 @@ header {
 }
 
 #content1 h5 {
-    width: 64%;
+    margin-left: 5%;
+    width: 80%;
     font-style: italic;
     position: absolute;
     z-index: 999;
-    top: 80%;
+    top: 82%;
     left: 4%;
     color: white;
-    font-size: 200%;
+    font-size: 210%;
     font-weight: 500;
     border-bottom: 2px solid white;
 }
@@ -381,7 +384,7 @@ header {
 
 
 .index-footer {
-    margin-top: 5%;
+    margin-top: 7%;
     grid-column-start: 1;
     grid-column-end: 13;
     display: grid;
@@ -888,7 +891,8 @@ header {
     grid-template-rows: repeat(1, minmax(30px, auto));
     grid-gap: 0px;
     margin-bottom: 0%;
-    margin-top: 20%;
+    margin-top: 120%;
+    width: 150%;
     bottom: 0;
     grid-row: 8;
     grid-column: span 13;
@@ -904,30 +908,45 @@ header {
     /*background-color: #1e242f;*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(9, minmax(50px, auto));
+    grid-template-rows: repeat(15, minmax(50px, auto));
     grid-gap: 0px;
 }
 
 .contact1 {
-    margin-top: 18%;
-    grid-column-start: 2;
+    top: 8%;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row: span 5;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
+}
+
+.contact1 img {
+    grid-column-start: 1;
     grid-column-end: 12;
-}
-
-.contact1 h2 {
-    padding: 5%;
     width: 100%;
-    color: white;
-    font-size: 270%;
+    position: relative;
+    z-index: 998;
+    display: block;
 }
 
-.contact1 p {
-    padding: 5%;
-    color: white;
-    font-size: 170%;
+.contact1 h5 {
+    text-align: center;
+    width: 48%;
+    font-style: italic;
+    position: absolute;
+    z-index: 999;
+    top: 72%;
+    left: 24%;
+    color: rgb(255, 255, 255);
+    font-size: 700%;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .contact2 {
+    margin-bottom: 10%;
     margin-top: 10%;
     grid-column-start: 2;
     grid-column-end: 12;
@@ -936,54 +955,306 @@ header {
     justify-content: space-around;
 }
 
-.contact2 h2 {
-    color: white;
-    font-size: 200%;
-    padding: 5%;
-}
-
 .contact2 p {
     padding: 5%;
     color: white;
-    font-size: 130%;
-    width: 75%;
-}
-
-.contact2 img {
-    border-radius: 8px;
+    font-size: 170%;
     width: 100%;
-    padding-right: 5%;
 }
 
 .contact3 {
-    margin-top: 15%;
+    margin-top: 0%;
     grid-column-start: 2;
     grid-column-end: 12;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
     color: white;
 }
 
 .contact3 h2 {
-    padding: 5%;
     font-size: 200%;
+    padding: 5%;
 }
 
 .contact3 p {
-    padding: 5%;
     font-size: 130%;
+    padding: 5%;
+    padding-top: 0%;
+}
+
+.contact3 a {
+    color: #b64b4b;
 }
 
 .contact4 {
-    margin-top: 15%;
+    margin-top: 7%;
     grid-column-start: 2;
     grid-column-end: 12;
+    color: white;
+}
+
+.contact4 h2 {
+    font-size: 200%;
+    padding: 5%;
+}
+
+.contact4 p {
+    font-size: 130%;
+    padding: 5%;
+    padding-top: 0%;
+}
+
+.contact4 a {
+    color: #b64b4b;
+}
+
+.contact5 {
+    margin-top: 25%;
+    grid-column-start: 2;
+    grid-column-end: 7;
+    color: white;
+}
+
+.contact5 h2 {
+    margin-left: 10%;
+    font-size: 200%;
+    padding: 5%;
+}
+
+.contact5 p {
+    font-size: 130%;
+    padding: 5%;
+    padding-top: 0%;
+    margin-left: 10%;
+}
+
+.contact6 {
+    margin-top: 10%;
+    grid-column-start: 7;
+    grid-column-end: 12;
+}
+
+.contact6 img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.contact-wrap {
+    margin-top: 5%;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    background-color: #000000;
+    border-radius: 8px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+}
+
+.contact7-1 {
+    width: 20%;
+    margin-top: 6%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.contact7-1 h2 {
+    border-bottom: 2px solid white;
+    font-size: 170%;
+}
+
+.contact7-1 p {
+    padding: 2%;
+    font-size: 130%;
+}
+
+.contact7-1 a {
     color: white;
 }
+
+.contact7-1 a:hover {
+    transition: 0.3s ease;
+    color: #ce7d7d;
+}
+
+.contact7-2 {
+    width: 30%;
+    margin-top: 6%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.contact-icon-bar {
+    margin-left: 28%;
+    font-size: 170%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.cont-facebook {
+    color: white;
+    padding: 4%;
+}
+.cont-instagram {
+    color: white;
+    padding: 4%;
+}
+.cont-youtube {
+    color: white;
+    padding: 4%;
+}
+.cont-twitter {
+    color: white;
+    padding: 4%;
+}
+.cont-twitter:hover,
+.cont-youtube:hover,
+.cont-instagram:hover,
+.cont-facebook:hover {
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease;
+    transform: scale(1.2);
+    background-color: rgb(63, 63, 63);
+    border-radius: 8px;
+}
+
+
+.contact7-2 h2 {
+    font-size: 170%;
+    border-bottom: 2px solid white;
+}
+
+.contact7-2 p {
+    padding: 3%;
+    font-size: 130%;
+    font-weight: 300;
+}
+
+.contact7-3 {
+    margin-left: 5%;
+    margin-top: 6%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+
+.contact7-3 h2 {
+    border-bottom: 2px solid white;
+    font-size: 170%;
+}
+
+.contact7-3 p {
+    padding: 2%;
+    font-size: 120%;
+}
+
+.contact8 {
+    margin-top: 10%;
+    grid-column-start: 2;
+    grid-column-end: 13;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.contact8 h2 {
+    color: white;
+    font-size: 200%;
+    padding: 2%;
+}
+
+.contact8 p {
+    padding: 2%;
+    color: white;
+    font-size: 130%;
+    width: 100%;
+}
+
+.contact9 {
+    grid-column-start: 2;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.contact-form1 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    margin-top: 10%;
+    color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 45%;
+    top: 376.5%;
+}
+
+.message label {
+    font-size: 150%;
+}
+
+.message textarea {
+    border-radius: 3px;
+    width: 500px;
+    height: 300px;
+}
+
+#submit2 {
+    margin-left: 22%;
+    position: absolute;
+    background-color: #000000;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 130%;
+    font-style: italic;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+}
+
+#submit2:hover {
+    background-color: #929595;
+    transition: 0.2s ease;
+}
+
+.contact10 {
+    margin-top: 20%;
+    grid-column-start: 2;
+    grid-column-end: 12;
+}
+
+.contact10 p {
+    padding: 5%;
+    font-size: 170%;
+    color: white;
+}
+
+.contact11 {
+    grid-column-start: 2;
+    grid-column-end: 12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact11 img {
+    width: 20%;
+}
+
 
 
 
@@ -1128,7 +1399,7 @@ header {
     grid-template-rows: repeat(1, minmax(30px, auto));
     grid-gap: 0px;
     margin-bottom: 0%;
-    margin-top: 10%;
+    margin-top: 11%;
     bottom: 0;
     grid-row: 8;
     grid-column: span 13;
