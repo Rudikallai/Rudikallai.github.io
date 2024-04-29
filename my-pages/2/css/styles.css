@@ -528,7 +528,7 @@ header {
 #models-content4-text p:hover {
     color: #726b6b;
     transition: all 0.2s ease;
-    font-style: italic;
+
     border-bottom: 1px solid rgb(124, 117, 117);
 }
 
@@ -1687,6 +1687,7 @@ header {
     }
 
     #logo {
+        width: 45%;
         margin-left: 0%;
     }
 
@@ -1728,8 +1729,8 @@ header {
     #login,
     #story,
     #contact {
-        font-size: 1.5rem;
-        margin-top: 5%;
+        font-size: 1.8rem;
+        margin-top: 14%;
     }
 
 
@@ -1978,5 +1979,27 @@ header {
         padding: 5%;
         padding-bottom: 5%;
     }
+    /*Models*/
 
+
+
+    /*BUY / TEST*/
+    .buy1 {
+        grid-column-start: 2;
+        grid-column-end: 12;
+    }
+
+    .form-div {
+        margin-right: 12%;
+    }
+
+    .buy2 {
+        display: none;
+    }
+
+    #back-to-m {
+        width: 20%;
+        font-size: 80%;
+        margin-right: 5%;
+    }
 }
