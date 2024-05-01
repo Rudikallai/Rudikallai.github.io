@@ -123,6 +123,8 @@ header {
 #logo a {
     color: #ddd;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
 }
 
 #logo img {
@@ -519,7 +521,7 @@ header {
     width: 110%;
     margin: 17%;
     padding: 5%;
-    font-size: 1.4rem;
+    font-size: 120%;
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
@@ -796,14 +798,14 @@ header {
 
 .contact1 h5 {
     text-align: center;
-    width: 48%;
+    width: 28%;
     font-style: italic;
     position: absolute;
     z-index: 999;
     top: 72%;
-    left: 24%;
+    left: 35%;
     color: rgb(255, 255, 255);
-    font-size: 700%;
+    font-size: 400%;
     font-weight: 700;
     border-bottom: 2px solid rgb(255, 255, 255);
 }
@@ -895,7 +897,7 @@ header {
     grid-column-end: 12;
 }
 
-.contact6 img {
+.contact6 iframe {
     width: 100%;
     border-radius: 8px;
 }
@@ -1019,12 +1021,14 @@ header {
 }
 
 .contact8 {
-    margin-top: 10%;
+    margin-top: 15%;
     grid-column-start: 2;
     grid-column-end: 13;
+    margin-right: 10%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
 }
 
 .contact8 h2 {
@@ -1050,13 +1054,12 @@ header {
 
 .contact-form1 {
     grid-column-start: 2;
-    grid-column-end: 7;
-    margin-top: 10%;
+    grid-column-end: 12;
+    margin-top: 2%;
     color: white;
     display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
+
+    flex-direction: column;
 }
 
 .contact-us-form {
@@ -1064,10 +1067,21 @@ header {
     flex-direction: row;
 }
 
+.form-cont {
+    width: 50%;
+}
+
+
 .message {
-    margin-top: 3%;
-    margin-left: 20%;
-    width: 170%;
+    margin-left: 6%;
+    margin-top: 1%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message2 {
+    display: none;
 }
 
 .message label {
@@ -1075,7 +1089,7 @@ header {
 }
 
 .message textarea {
-    width: 600%;
+    width: 100%;
     height: 70%;
     border-radius: 3px;
 
@@ -1086,9 +1100,9 @@ header {
 }
 
 #submit2 {
-    margin-left: 70%;
+    margin-left: 60%;
     background-color: #000000;
-    width: 500px;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     font-size: 130%;
@@ -1192,12 +1206,12 @@ header {
 
 .form input {
     height: 50px;
-    width: 500px;
+    width: 100%;
     border-radius: 4px;
 }
 
 .form select {
-    width: 500px;
+    width: 100%;
     height: 30px;
     border-radius: 8px;
     padding: 5px;
@@ -1211,13 +1225,44 @@ header {
     font-size: 150%;
 }
 
+
+
+
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 4%;
+}
+
+.form2 input {
+    height: 50px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.form2 select {
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.form2 option {
+    font-size: 120%;
+}
+
+.form2 label {
+    font-size: 150%;
+}
+
 #cars {
     margin-bottom: 10%;
 }
 
 #submit {
     background-color: #000000;
-    width: 500px;
+    width: 100%;
     height: 50px;
     border-radius: 5px;
     font-size: 130%;
@@ -1653,7 +1698,8 @@ header {
     flex: 0 0 100%;
     width: 100%;
     transition: transform 0.5s ease;
-    max-height: 500px;
+    min-height: 500px;
+    max-height: 900px;
 }
 
 .carousel-controls {
@@ -1672,6 +1718,31 @@ header {
     border-radius: 5px;
 }
 /*Gallery in Models subpages*/
+
+
+.social1 {
+    margin-top: 60%;
+    grid-column-start: 2;
+    grid-column-end: 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social1 p {
+    color: white;
+}
+
+.social1 a {
+    color: white;
+    margin-top: 10%;
+}
+
+.social1 img {
+    margin-top: 20%;
+    width: 30%;
+}
 
 
 
@@ -1706,7 +1777,7 @@ header {
         grid-column-start: 2;
         grid-column-end: 12;
         margin-left: 0%;
-        margin-top: 60%;
+        margin-top: 50%;
         text-align: center;
     }
 
@@ -1759,7 +1830,17 @@ header {
         font-size: 100%;
     }
 
+    #logo a {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #logo img {
+        width: 30%;
+    }
+
     #logo {
+        text-align: center;
         width: 45%;
         margin-left: 0%;
     }
@@ -2068,13 +2149,17 @@ header {
     .buy1 {
         justify-content:flex-start;
         grid-column-start: 2;
-        grid-column-end: 10;
+        grid-column-end: 12;
     }
 
     .buy1 p {
         font-size: 30px;
         text-align: center;
-        margin-right: 7%;
+        margin-right: 0%;
+    }
+
+    .form-div {
+        width: 100%;
     }
 
     .buy2 {
@@ -2106,22 +2191,25 @@ header {
     }
 
     .form select {
+        width: 125%;
         text-align: center;
     }
 
     .form input {
         text-align: center;
         margin-left: 3%;
-        width: 350px;
+        width: 125%;
     }
 
     #submit {
         margin-left: 3%;
-        width: 350px;
+        width: 125%;
     }
 
     .form-div label {
+        width: 125%;
         margin-left: 3%;
+        margin-bottom: 5%;
     }
 
     #revuelto1 h5 {
@@ -2220,7 +2308,7 @@ header {
     }
     
     .contact1 {
-        margin-top: 108%;
+        margin-top: 28%;
         position: relative;
         grid-column-start: 1;
         grid-column-end: 13;
@@ -2260,12 +2348,13 @@ header {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        text-align: center;
     }
     
     .contact2 p {
         padding: 5%;
         color: white;
-        font-size: 170%;
+        font-size: 140%;
         width: 100%;
     }
     
@@ -2274,6 +2363,7 @@ header {
         grid-column-start: 2;
         grid-column-end: 12;
         color: white;
+        text-align: center;
     }
     
     .contact3 h2 {
@@ -2296,6 +2386,7 @@ header {
         grid-column-start: 2;
         grid-column-end: 12;
         color: white;
+        text-align: center;
     }
     
     .contact4 h2 {
@@ -2316,12 +2407,13 @@ header {
     .contact5 {
         margin-top: 25%;
         grid-column-start: 2;
-        grid-column-end: 7;
+        grid-column-end: 12;
         color: white;
+        text-align: center;
     }
     
     .contact5 h2 {
-        margin-left: 10%;
+        margin-left: 0%;
         font-size: 200%;
         padding: 5%;
     }
@@ -2330,16 +2422,16 @@ header {
         font-size: 130%;
         padding: 5%;
         padding-top: 0%;
-        margin-left: 10%;
+        margin-left: 0%;
     }
     
     .contact6 {
         margin-top: 10%;
-        grid-column-start: 7;
+        grid-column-start: 2;
         grid-column-end: 12;
     }
     
-    .contact6 img {
+    .contact6 iframe {
         width: 100%;
         border-radius: 8px;
     }
@@ -2351,14 +2443,15 @@ header {
         background-color: #000000;
         border-radius: 8px;
         display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+        justify-content: center;
+        flex-direction: column;
+
     }
     
     .contact7-1 {
-        width: 20%;
+        width: 100%;
         margin-top: 6%;
-        margin-left: 10%;
+        margin-left: 0%;
         display: flex;
         flex-direction: column;
         color: white;
@@ -2384,9 +2477,9 @@ header {
     }
     
     .contact7-2 {
-        width: 30%;
-        margin-top: 6%;
-        margin-left: 5%;
+        width: 100%;
+        margin-top: 16%;
+        margin-left: 0%;
         display: flex;
         flex-direction: column;
         color: white;
@@ -2444,8 +2537,8 @@ header {
     }
     
     .contact7-3 {
-        margin-left: 5%;
-        margin-top: 6%;
+        margin-left: 7%;
+        margin-top: 16%;
         margin-right: 10%;
         display: flex;
         flex-direction: column;
@@ -2486,54 +2579,71 @@ header {
     
     .contact9 {
         grid-column-start: 2;
-        grid-column-end: 13;
+        grid-column-end: 12;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
     }
     
     .contact-form1 {
+        margin-right: 0%;
         grid-column-start: 2;
-        grid-column-end: 7;
+        grid-column-end: 12;
         margin-top: 10%;
         color: white;
         display: flex;
-        justify-content: left;
-        align-items: center;
-        flex-direction: row;
+        justify-content: space-around;
+
+        flex-direction: column;
     }
     
     .contact-us-form {
+        width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .message {
-        margin-top: 3%;
-        margin-left: 20%;
-        width: 170%;
         display: none;
     }
-    
-    .message label {
-        font-size: 150%;
+
+    .message2 {
+        display: block;
+        flex-direction: column;
+        width: 100%;
     }
     
-    .message textarea {
-        width: 600%;
-        height: 70%;
+    .message2 label {
+        font-size: 160%;
+    }
+    
+    .message2 textarea {
+        padding: 2%;
+        margin-left: 0%;
+        width: 90%;
+        height: 170px;
         border-radius: 3px;
     
     }
-    
-    .message p {
+
+    .form input {
+        width: 100%;
+    }
+
+    .form-cont {
+        width: 100%;
         text-align: center;
+    }
+
+    .form {
+        width: 98%;
     }
     
     #submit2 {
         margin-left: 0%;
         background-color: #000000;
-        width: 100px;
+        width: 100%;
         height: 50px;
         border-radius: 5px;
         font-size: 130%;
@@ -2551,6 +2661,7 @@ header {
         margin-top: 15%;
         grid-column-start: 2;
         grid-column-end: 12;
+        text-align: center;
     }
     
     .contact10 p {
@@ -2589,6 +2700,36 @@ header {
         color: #ddd;
         margin-bottom: 0;
         box-shadow: 0 0.5px 10px #ddd;
+    }
+
+
+    .form2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 4%;
+    }
+    
+    .form2 input {
+        height: 50px;
+        width: 130%;
+        border-radius: 4px;
+    }
+    
+    .form2 select {
+        width: 130%;
+        height: 30px;
+        border-radius: 8px;
+        padding: 5px;
+    }
+    
+    .form2 option {
+        width: 130%;
+        font-size: 120%;
+    }
+    
+    .form2 label {
+        font-size: 150%;
     }
 
 }

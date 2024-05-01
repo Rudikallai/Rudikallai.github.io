@@ -21,7 +21,7 @@
 
         <div id="logo">
             <a href="../index.html">
-                <h1><img src="../img/logo.png" alt="Logo">Dynamic Autosport</h1>
+                <img src="../img/logo.png" alt="Logo"><h1>Dynamic Autosport</h1>
             </a>
         </div>
 
@@ -75,7 +75,10 @@
     </div>
 
     <div class="contact6">
-        <img src="../img/contact1.jpeg" alt="">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1233.9165229918544!2d19.050382519764998!3d47.5030772781533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc14ee8761ef%3A0xa29743673cdeb5f0!2sBudapest%2C%20Sas%20u%2C%201051!5e0!3m2!1sen!2shu!4v1711646764511!5m2!1sen!2shu"
+            width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="contact-wrap">
@@ -113,7 +116,7 @@
 
     <div class="contact-form1">
         <form class="contact-us-form" action="send_message.php" method="post">
-            <div>
+            <div class="form-cont">
                 <div class="form">
                     <label for="name">Name:</label>
                     <input maxlength="20" type="text" id="name" name="name" placeholder="Name..." required>
@@ -127,6 +130,10 @@
                 <div class="form">
                     <label for="phone">Phone:</label>
                     <input maxlength="20" type="phone" id="phone" name="phone" placeholder="Phone..." required>
+                </div>
+                <div class="message2">
+                    <label for="message">Message:</label>
+                    <textarea id="message2" name="message" placeholder="Message..." required></textarea>
                 </div>
                 <div class="form">
                     <input id="submit2" type="submit" value="Send">
