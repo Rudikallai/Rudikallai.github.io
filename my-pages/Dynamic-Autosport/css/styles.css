@@ -1731,6 +1731,7 @@ header {
 }
 
 .social1 p {
+    text-align: center;
     color: white;
     margin-bottom: 2%;
     font-size: 300%;
@@ -1830,6 +1831,10 @@ header {
 
 
 @media only screen and (max-width: 660px) {
+
+    .social p {
+        font-size: 200%;
+    }
 
     .content1 {
         margin-top: 0%;
