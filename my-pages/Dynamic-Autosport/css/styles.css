@@ -1832,7 +1832,11 @@ header {
 
 @media only screen and (max-width: 660px) {
 
-    .social p {
+    .social1 a {
+        padding: 5%;
+    }
+
+    .social1 p {
         font-size: 200%;
     }
 
