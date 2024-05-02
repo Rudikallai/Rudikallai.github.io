@@ -209,7 +209,7 @@ header {
 #story:hover,
 #contact:hover {
     border-bottom: 2px solid #000000;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
     color: #000000;
     font-style: italic;
 }
@@ -1721,7 +1721,7 @@ header {
 
 
 .social1 {
-    margin-top: 60%;
+    margin-top: 20%;
     grid-column-start: 2;
     grid-column-end: 12;
     display: flex;
@@ -1735,8 +1735,16 @@ header {
 }
 
 .social1 a {
+    border-radius: 5px;
+    padding: 3%;
     color: white;
     margin-top: 10%;
+}
+
+.social1 a:hover {
+    color: black;
+    background-color: #9c9494;
+    transition: 0.3s ease;
 }
 
 .social1 img {
