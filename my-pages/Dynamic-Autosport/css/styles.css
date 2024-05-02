@@ -1732,13 +1732,14 @@ header {
 
 .social1 p {
     color: white;
+    margin-bottom: 2%;
+    font-size: 300%;
 }
 
 .social1 a {
     border-radius: 5px;
-    padding: 3%;
+    padding: 2%;
     color: white;
-    margin-top: 10%;
 }
 
 .social1 a:hover {
@@ -1748,8 +1749,8 @@ header {
 }
 
 .social1 img {
-    margin-top: 20%;
-    width: 30%;
+    margin-top: 5%;
+    width: 20%;
 }
 
 
